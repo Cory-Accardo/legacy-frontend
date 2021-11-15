@@ -2,6 +2,8 @@
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalContext";
 
+import "../assets/scss/main.scss";
+
 import "../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
 import "../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
 import "../assets/fonts/fontawesome-5/webfonts/fa-solid-900.ttf";
@@ -23,7 +25,6 @@ import "../assets/fonts/typography-font/typo.css";
 import "../assets/fonts/fontawesome-5/css/all.css";
 
 import "../assets/scss/bootstrap.scss";
-import "../assets/scss/main.scss";
 
 const MyApp = ({ Component, pageProps, router }) => {
   if (router.pathname.match(/sign|reset|coming/)) {
