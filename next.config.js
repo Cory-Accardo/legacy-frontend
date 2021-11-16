@@ -10,6 +10,7 @@ module.exports = withFonts({
         disableStaticImages: true
       },
     webpack5: false,
+    distDir: 'build',
 }
 
 );
