@@ -2,8 +2,6 @@
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalContext";
 
-import "../assets/scss/main.scss";
-
 import "../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
 import "../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
 import "../assets/fonts/fontawesome-5/webfonts/fa-solid-900.ttf";
@@ -11,8 +9,8 @@ import "../assets/fonts/fontawesome-5/webfonts/fa-solid-900.ttf";
 import "../assets/fonts/typography-font/CircularStd-Bold.ttf";
 import "../assets/fonts/typography-font/CircularStd-BoldItalic.ttf";
 import "../assets/fonts/typography-font/CircularStd-Book.ttf";
-import "../assets/fonts/typography-font/CircularStd-BookItalic.ttf";
-import "../assets/fonts/typography-font/CircularStd-Medium.ttf";
+import "../assets/fonts/glitten-font/Glitten-Regular.ttf";
+import "../assets/fonts/glitten-font/GLITTEN ALL CAPS.ttf";
 
 import "../assets/fonts/icon-font/fonts/avasta.ttf";
 import "../assets/fonts/icon-font/css/style.css";
@@ -25,6 +23,7 @@ import "../assets/fonts/typography-font/typo.css";
 import "../assets/fonts/fontawesome-5/css/all.css";
 
 import "../assets/scss/bootstrap.scss";
+import "../assets/scss/main.scss";
 
 const MyApp = ({ Component, pageProps, router }) => {
   if (router.pathname.match(/sign|reset|coming/)) {

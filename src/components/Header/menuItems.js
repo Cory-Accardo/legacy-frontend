@@ -1,15 +1,25 @@
 export const menuItems = [
+  // {
+  //   name: "demos",
+  //   label: "Demos",
+  //   items: [
+  //     { name: "", label: "Home 01" },
+  //     { name: "home-2", label: "Home 02" },
+  //     { name: "home-3", label: "Home 03" },
+  //     { name: "home-4", label: "Home 04" },
+  //     { name: "home-5", label: "Home 05" },
+  //     { name: "home-6", label: "Home 06" },
+  //   ],
+  // },
   {
-    name: "demos",
-    label: "Demos",
-    items: [
-      { name: "", label: "Home 01" },
-      { name: "home-2", label: "Home 02" },
-      { name: "home-3", label: "Home 03" },
-      { name: "home-4", label: "Home 04" },
-      { name: "home-5", label: "Home 05" },
-      { name: "home-6", label: "Home 06" },
-    ],
+    name: "about",
+    label: "About",
+    isExternal: false,
+  },
+  {
+    name: "#",
+    label: "Join the Next Cohort",
+    isExternal: false,
   },
   {
     name: "pages",
@@ -42,6 +52,8 @@ export const menuItems = [
           { name: "freewayeasy", label: "Freeway Easy" },
           { name: "crenshawyogadance", label: "Crenshaw Yoga & Dance" },
           { name: "myfishstop", label: "My Fish Stop" },
+          { name: "jordanshotdogs", label: "Jordan’s Hot Dogs" },
+          { name: "deliciousatthedunbar", label: "Delicious at the Dunbar" },
         ],
       },
       {
@@ -57,9 +69,9 @@ export const menuItems = [
       },
     ],
   },
-  {
-    name: "https://uxtheme.net/product-support/",
-    label: "Support",
-    isExternal: true,
-  },
+  // {
+  //   name: "https://uxtheme.net/product-support/",
+  //   label: "Support",
+  //   isExternal: true,
+  // },
 ];

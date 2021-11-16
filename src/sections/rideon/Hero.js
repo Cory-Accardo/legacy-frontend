@@ -3,6 +3,10 @@ import React from "react";
 import imageUrl from "../../assets/image/rideon/png/hero-img-1.png";
 import heroCtaBtnImage from "../../assets/image/rideon/png/hero-cta-btn-image.png";
 
+// const fontFamilyAdd = {
+//   fontFamily: ''
+// }
+
 const Hero = ({ className, ...rest }) => {
   return (
     <div className={className} {...rest}>

@@ -5,21 +5,24 @@ import Hero from "../sections/crenshawyogadance/Hero";
 import Checkout from "../sections/crenshawyogadance/Checkout";
 import SectionDetail from "../sections/crenshawyogadance/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
+import BrandLogo from '../assets/image/crenshawyogadance/png/brand-logo.png';
 
 const CrenshawYogaDance = () => {
     return (
         <>
             <PageWrapper
                 themeConfig={{
+                    logoImage: BrandLogo,
                     headerClassName: "site-header--menu-right",
+                    headerFluid: false,
                     headerButton: (
                         <>
-                            <button className="btn btn btn-sunset btn-medium rounded-5 font-size-3">
-                                Support the Collective
+                            <button className="btn btn btn-sunset btn-medium rounded-5 font-size-3" style={{ background: '#00793D', borderColor: '#00793D' }}>
+                                $hop Love
                             </button>
                         </>
                     ),
-                    footerStyle: "style6",
+                    footerStyle: "style5",
                 }}
             >
                 <Hero className="position-relative pt-25 pt-md-31 pt-lg-35 pb-14 pb-md-19 pb-lg-33 position-relative overflow-hidden" />

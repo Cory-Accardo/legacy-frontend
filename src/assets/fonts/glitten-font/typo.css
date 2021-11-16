@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Glitten All Caps';
+    src: url('GLITTEN ALL CAPS.otf');
+    src: url('GLITTEN ALL CAPS.otf') format('opentype'),
+        url('GLITTEN ALL CAPS.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glitten-Regular';
+    src: url('Glitten-Regular.otf');
+    src: url('Glitten-Regular.otf') format('opentype'),
+        url('Glitten-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

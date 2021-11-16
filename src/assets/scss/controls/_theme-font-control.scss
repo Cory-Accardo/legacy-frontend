@@ -4,6 +4,7 @@
 
 $enable-responsive-font-sizes: true;
 $font-family-base: "Circular Std", sans-serif;
+$font-family-glitten: "Glitten-Regular";
 
 //custom font-family
 $btn-font-family: $font-family-base;
@@ -97,18 +98,21 @@ $fsize: (
     //48px
     line-height: 1.16666,
     letter-spacing: -0.03px,
+    font-family: $font-family-glitten
   ),
   11: (
     font-size: 58px,
     //58px
     line-height: 1.10344,
     letter-spacing: -1px,
+    font-family: $font-family-glitten
   ),
   12: (
     font-size: 70px,
     //70px
     line-height: 1,
     letter-spacing: -1px,
+    font-family: $font-family-glitten
   ),
   13: (
     font-size: 80px,

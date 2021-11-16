@@ -10,7 +10,7 @@ const Hero = ({ className, ...rest }) => {
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div
-                            className="mt-8 mt-lg-0 mr-xl-13"
+                            className="mt-8 mt-lg-0"
                             data-aos="fade-right"
                             data-aos-delay={500}
                         >

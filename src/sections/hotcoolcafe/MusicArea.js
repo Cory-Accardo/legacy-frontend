@@ -7,8 +7,6 @@ import imgM3 from "../../assets/image/hotcool/png/hot-and-cool-image-3.png";
 import imgM4 from "../../assets/image/hotcool/png/hot-and-cool-image-4.png";
 import location from "../../assets/image/hotcool/png/location.png";
 
-import purchase from '../../utils/purchase';
-
 const styledBadge = {
   maxWidth: 'max-content',
   backgroundColor: `#E9EBED`
@@ -61,9 +59,11 @@ const MusicArea = ({ className, ...rest }) => {
                   <h5 className="text-bunker font-size-6 line-height-reset mb-7 line-height-26">
                     Mesghana <br /> “Grateful”
                   </h5>
-                    <a onClick = {() => purchase('acct_1JuAWBIGOIaBjuv7', 'prod_Ka16WFQViFeNty')}className="btn btn-sunset border-none bg-gradient rounded-5 min-w-144 h-55" style={styledButton}>
+                  <Link href="/#">
+                    <a className="btn btn-sunset border-none bg-gradient rounded-5 min-w-144 h-55" style={styledButton}>
                       Order now
                     </a>
+                  </Link>
                 </div>
               </div>
             </div>

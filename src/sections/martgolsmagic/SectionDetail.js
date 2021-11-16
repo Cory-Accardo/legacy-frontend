@@ -9,27 +9,23 @@ const SectionDetail = ({ className, ...rest }) => {
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div
-                            className="mt-8 mt-lg-0 mr-xl-13"
+                            className="mt-8 mt-lg-0"
                             data-aos="fade-right"
                             data-aos-delay={500}
                         >
-                            <div className="row justify-content-center">
-                                <div className="col-md-12">
-                                    <div
-                                        className="text-center mb-lg-5"
-                                        data-aos="zoom-in"
-                                        data-aos-duration={500}
-                                    >
-                                        <h2 className="font-size-10 letter-spacing-n83 mb-6">
-                                            Experience <span style={{ color: '#FFD706' }}>Martgol’s Magic</span>
-                                        </h2>
-                                        <p className="font-size-7 mb-0">
-                                            For years Martgol Beasley has been using Martgol's Magic at his own paint rejuvenation, and car detailing firm.
-                                            Now his lifetime of experience is made available to you. Martgol’s Magic Offers a range of products; including our
-                                            Tire Gloss, which is good for tires & not over glossy, Finish Enhancer, designed to enhance your cars finish and to maintain that just waxed look and the Paste Wax which seals and helps give more a deeper, glossier finish.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div
+                                className="text-center mb-lg-5"
+                                data-aos="zoom-in"
+                                data-aos-duration={500}
+                            >
+                                <h2 className="font-size-10 letter-spacing-n83 mb-6">
+                                    Experience <span style={{ color: '#FFD706' }}>Martgol’s Magic</span>
+                                </h2>
+                                <p className="font-size-7 mb-0">
+                                    For years Martgol Beasley has been using Martgol's Magic at his own paint rejuvenation, and car detailing firm.
+                                    Now his lifetime of experience is made available to you. Martgol’s Magic Offers a range of products; including our
+                                    Tire Gloss, which is good for tires & not over glossy, Finish Enhancer, designed to enhance your cars finish and to maintain that just waxed look and the Paste Wax which seals and helps give more a deeper, glossier finish.
+                                </p>
                             </div>
                             <div className="d-flex align-items-center justify-content-center mr-xl-15">
                                 <div className="mr-3">

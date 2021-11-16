@@ -23,6 +23,7 @@ export const themeConfigDefault = {
   headerLogoClassName: "",
   footerStyle: "style1",
   footerClassName: "",
+  logoImage: null
 };
 
 const GlobalProvider = ({ children }) => {

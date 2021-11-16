@@ -15,7 +15,7 @@ const Hero = ({ className, ...rest }) => {
               data-aos="fade-right"
               data-aos-delay={500}
             >
-              <h1 className="font-size-11 mb-9">Pips on La Brea’s $25 for $10 deal.</h1>
+              <h1 className="font-size-11 mb-9">Pips on La Brea’s $25 for free dessert.</h1>
               <p className="font-size-8 mb-lg-6 pr-sm-15 pr-lg-8 pr-xl-15">
                 We welcome you to enjoy live jazz music along with our American comfort food and the perfect blend of classic American!
               </p>

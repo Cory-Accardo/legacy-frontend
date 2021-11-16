@@ -6,8 +6,6 @@ import imgM2 from "../../assets/image/rideon/png/rideon-image-2.png";
 import imgM3 from "../../assets/image/rideon/png/rideon-image-3.png";
 import imgM4 from "../../assets/image/rideon/png/rideon-image-4.png";
 import location from "../../assets/image/rideon/png/location.png";
-import purchase from '../../utils/purchase';
-import products from '../../utils/products';
 
 const styledBadge = {
   maxWidth: 'max-content',
@@ -53,9 +51,11 @@ const MusicArea = ({ className, ...rest }) => {
                 <h5 className="text-bunker font-size-6 line-height-reset mb-7 line-height-26">
                   Giant <br /> ATX 3 Disc
                 </h5>
-                  <a onClick={() => purchase('bigboy', products.ATX3DISC_PRODUCT) }className="btn btn-sunset rounded-5 min-w-144 h-55">
+                <Link href="/#">
+                  <a className="btn btn-sunset rounded-5 min-w-144 h-55">
                     Buy now
                   </a>
+                </Link>
               </div>
             </div>
             {/* end single card */}

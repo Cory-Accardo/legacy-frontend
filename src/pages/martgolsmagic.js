@@ -4,18 +4,20 @@ import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/martgolsmagic/Hero";
 import SectionDetail from "../sections/martgolsmagic/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
+import BrandLogo from '../assets/image/martgolsmagic/png/logo-main.png';
 
 const MartgolsMagic = () => {
     return (
         <>
             <PageWrapper
                 themeConfig={{
+                    logoImage: BrandLogo,
                     headerClassName: "site-header--menu-right",
                     headerFluid: false,
                     headerButton: (
                         <>
-                            <button className="btn btn btn-sunset btn-medium rounded-5 font-size-3">
-                                Support the Collective
+                            <button className="btn btn btn-sunset btn-medium rounded-5 font-size-3" style={{ background: '#00793D', borderColor: '#00793D' }}>
+                                $hop Love
                             </button>
                         </>
                     ),

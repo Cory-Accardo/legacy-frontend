@@ -9,38 +9,24 @@ const SectionDetail = ({ className, ...rest }) => {
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div
-                            className="mt-8 mt-lg-0 mr-xl-13"
+                            className="mt-8 mt-lg-0"
                             data-aos="fade-right"
                             data-aos-delay={500}
                         >
-                            <div className="row justify-content-center">
-                                <div className="col-md-12">
-                                    <div
-                                        className="text-center mb-lg-5"
-                                        data-aos="zoom-in"
-                                        data-aos-duration={500}
-                                    >
-                                        <h2 className="font-size-10 letter-spacing-n83 mb-6">
-                                            Freeway Easy <span style={{ color: '#00afeb' }}>Does It.</span>
-                                        </h2>
-                                        <p className="font-size-7 mb-0">
-                                            Freeway Easy Traffic and Driving School can help you in a variety of ways, the time is now!
-                                            BEHIND-THE-WHEEL - Training for students who have a driving permit or license.
-                                            TRAFFIC SCHOOL- Our traffic school allows you to keep the points off of your record and your insurance rates low.
-                                            DRIVER'S EDUCATION - The driver education classes are great for teenagers who need a permit from the DMV.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-center mr-xl-15">
-                                <div className="mr-3">
-                                    <img src={checkoutImg} alt="" style={{ width: '14px', height: '14px' }} />
-                                </div>
-                                <div className="mt-0">
-                                    <p className="font-size-6 mb-0 font-weight-bold">
-                                        <a style={{ color: '#000' }} href="https://pipsonlabrea.com" target="_blank">Pips on LaBrea</a>
-                                    </p>
-                                </div>
+                            <div
+                                className="text-center mb-lg-5"
+                                data-aos="zoom-in"
+                                data-aos-duration={500}
+                            >
+                                <h2 className="font-size-10 letter-spacing-n83 mb-6">
+                                    Freeway Easy <span style={{ color: '#00afeb' }}>Does It.</span>
+                                </h2>
+                                <p className="font-size-7 mb-0">
+                                    Freeway Easy Traffic and Driving School can help you in a variety of ways, the time is now!
+                                    BEHIND-THE-WHEEL - Training for students who have a driving permit or license.
+                                    TRAFFIC SCHOOL- Our traffic school allows you to keep the points off of your record and your insurance rates low.
+                                    DRIVER'S EDUCATION - The driver education classes are great for teenagers who need a permit from the DMV.
+                                </p>
                             </div>
                         </div>
                     </div>

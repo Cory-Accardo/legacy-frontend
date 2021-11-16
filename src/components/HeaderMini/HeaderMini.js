@@ -18,7 +18,7 @@ const Header = () => {
           <div className="d-flex justify-content-between align-items-center flex-wrap">
             {/* Brand Logo*/}
             <div className={`brand-logo ${gContext.theme.headerLogoClassName}`}>
-              <Logo />
+              <Logo logo={gContext.theme.logoImage} />
             </div>
             <div
               className={`header-social-share ${

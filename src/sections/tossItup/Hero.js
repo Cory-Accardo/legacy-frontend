@@ -23,16 +23,16 @@ const Hero = ({ className, ...rest }) => {
               data-aos-delay={750}
             >
               <h1 className="font-size-13 mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
-                The <span style={{ color: '#8dc63f' }}>Toss It Up</span> <span style={{ color: '#39B54A' }}>Classic</span> <span style={{ color: '#d6df20' }}>Salad</span> Combo.
+                The <span style={{ color: '#8dc63f' }}>Toss It Up</span> <span style={{ color: '#39B54A' }}>Coupon</span> <span style={{ color: '#d6df20' }}>Code</span>
               </h1>
               <p className="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">
-                The Classics are our Toss It Up O.G. salads. Tried and True, here is where you find the BEST, and ONLY $5 salads in Los Angeles!
-                Make it a Combo, with our Rasberry Hibiscus Iced Tea. This tea is made with reduced sugar for our Diabetics and keto diet followers. Made with fresh raspberries, organic hibiscus tea, lemons, and REAL hibiscus flower, this red delight is less sugar to make your refreshing treat less guilty!
+                The Classics are our Toss It Up O.G. salads. Tried and True, here is where you find the BEST, and ONLY $5 salads in Los Angeles!<br/>
+                Receive a coupon code when you spend $40 or more!
               </p>
               <div className="mt-10">
                 <Link href="/#">
                   <a className="btn btn-dark-green btn-3 rounded-5" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
-                    Get Your Combo
+                    Place Your Order
                   </a>
                 </Link>
               </div>

@@ -30,6 +30,7 @@ const Header = () => {
       setShowReveal(false);
     }
   });
+  console.log(gContext.theme.logoImage);
 
   return (
     <>
@@ -46,7 +47,7 @@ const Header = () => {
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo mt-3 mt-md-0 d-flex align-items-center">
-              <Logo />
+              <Logo logo={gContext.theme.logoImage} />
             </div>
 
             <div className="collapse navbar-collapse">
