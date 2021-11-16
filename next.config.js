@@ -9,8 +9,7 @@ module.exports = withFonts({
     images: {
         disableStaticImages: true
       },
-    webpack5: false,
-    distDir: 'build',
+    webpack5: false
 }
 
 );
