@@ -41,7 +41,6 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "imagemin-mozjpeg": "^9.0.0",
     "next-optimized-images": "^2.6.2"
   }
 }
