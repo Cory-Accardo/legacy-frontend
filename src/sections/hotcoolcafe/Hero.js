@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import imgM from "../../assets/image/hotcool/png/hero-image-1.png";
+import purchase from '../../utils/purchase'
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -32,11 +33,9 @@ const Hero = ({ className, ...rest }) => {
                 A versatile and full bodied blend with a flavor profile of burnt caramel, 62% cocoa, and cranberry orange scone.
               </p>
               <div className="mt-10">
-                <Link href="/#">
-                  <a className="btn btn-dark-green btn-3 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
+                  <a onClick={()=> purchase('prod_KbV4Z107OYcnDv')}className="btn btn-dark-green btn-3 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
                     Order Now
                   </a>
-                </Link>
               </div>
             </div>
           </div>
