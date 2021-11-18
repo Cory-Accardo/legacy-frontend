@@ -32,7 +32,7 @@ const Hero = ({ className, ...rest }) => {
               </p>
               <div className="mt-10">
                 <Link href="/#">
-                  <a className="btn btn-dark-green btn-3 rounded-5 text-white" style={{ background: '#F6A682', borderColor: '#F6A682' }}>
+                  <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#F6A682', borderColor: '#F6A682' }}>
                     Buy Now
                   </a>
                 </Link>

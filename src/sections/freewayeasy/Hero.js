@@ -29,6 +29,7 @@ const Hero = ({ className, ...rest }) => {
                 <div className="mr-7">
                   <a
                     href="/#"
+                    target="_blank"
                     onClick={(e) => {
                       e.preventDefault();
                       // gContext.toggleVideoModal();

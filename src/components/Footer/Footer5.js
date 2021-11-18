@@ -45,41 +45,6 @@ const Footer = ({ className, ...rest }) => {
                         MISLA, Made In South LA, provides technology, creative and financial literacy bootcamps on an ongoing basis to South LA youth and adults.
                       </h5>
                     </div>
-                    {/*<div className="mb-10 mb-lg-0">*/}
-                    {/*  <h4 className="font-size-5 font-weight-normal mb-8 text-bali-gray">*/}
-                    {/*    Demos*/}
-                    {/*  </h4>*/}
-                    {/*  <ul className="list-unstyled">*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Saas*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Web application*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Mobile app*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Plugin*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*  </ul>*/}
-                    {/*</div>*/}
                   </div>
                   {/* End Single Widgets */}
                   {/* Single Widgets */}
@@ -94,131 +59,28 @@ const Footer = ({ className, ...rest }) => {
                         <img src={QRLogo3} alt="QR Code 3" />
                       </div>
                     </div>
-                    {/*<div className="mb-10 mb-lg-0">*/}
-                    {/*  <h4 className="font-size-5 font-weight-normal mb-8 text-bali-gray">*/}
-                    {/*    Pages*/}
-                    {/*  </h4>*/}
-                    {/*  <ul className="list-unstyled">*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          About us*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Career*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Faq*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="mb-6">*/}
-                    {/*      <Link href="/#">*/}
-                    {/*        <a className="font-size-5 text-lily-white gr-hover-text-dodger-blue-1">*/}
-                    {/*          Terms &amp; Condition*/}
-                    {/*        </a>*/}
-                    {/*      </Link>*/}
-                    {/*    </li>*/}
-                    {/*  </ul>*/}
-                    {/*</div>*/}
                   </div>
-                  {/* End Single Widgets */}
-                  {/*/!* Single Widgets *!/*/}
-                  {/*<div className="col-sm-4 col-xs-8">*/}
-                  {/*  <div className="mb-10 mb-lg-0 mr-xl-12">*/}
-                  {/*    <h4 className="font-size-5 font-weight-normal mb-8 text-bali-gray">*/}
-                  {/*      Support*/}
-                  {/*    </h4>*/}
-                  {/*    <div className="mt-7">*/}
-                  {/*      <Link*/}
-                  {/*        href="/#"*/}
-                  {/*        className="font-size-5 d-block text-white mb-0"*/}
-                  {/*        href="mailto:support@finity.com"*/}
-                  {/*      >*/}
-                  {/*        support@finity.com*/}
-                  {/*      </Link>*/}
-                  {/*      <Link*/}
-                  {/*        href="/#"*/}
-                  {/*        className="font-size-5 d-block text-white mb-0"*/}
-                  {/*        href="tel:+1-301-340-3946"*/}
-                  {/*      >*/}
-                  {/*        +1-301-340-3946*/}
-                  {/*      </Link>*/}
-                  {/*    </div>*/}
-                  {/*  </div>*/}
-                  {/*</div>*/}
-                  {/*/!* End Single Widgets *!/*/}
                 </div>
               </div>
             </div>
           </div>
-          <div className="row border-top border-default-color dark-mode-texts d-flex pt-11">
-            <div className="col-md-4 offset-4">
-              <div className="d-flex justify-content-center align-items-center">
+          <div className="row border-top border-default-color dark-mode-texts d-flex pt-11 align-items-center">
+            <div className="col-md-6">
+              <div className="d-flex align-items-center">
                 <h5 className="font-size-5 mr-5">
                   Designed & Developed by:
                 </h5>
                 <img src={MartyLogo} alt="marty logo" />
               </div>
             </div>
+            <div className="col-md-6">
+              <div className="d-flex justify-content-end align-items-end">
+                <h5 className="font-size-5">
+                  @ 2021 Copyright.
+                </h5>
+              </div>
+            </div>
           </div>
-          {/*<div className="border-top border-default-color dark-mode-texts d-flex align-items-center justify-content-center justify-content-sm-between flex-column flex-sm-row flex-wrap pt-11">*/}
-          {/*  <div className="mb-10 mb-sm-0">*/}
-          {/*    <div className="shadow-3 rounded-4">*/}
-          {/*      <form action="/">*/}
-          {/*        <div className="newsletter-3">*/}
-          {/*          <div className="form-group">*/}
-          {/*            <label className="mb-0" htmlFor="mail">*/}
-          {/*              <i className="icon icon-email-84 mb-0" />*/}
-          {/*            </label>*/}
-          {/*            <input*/}
-          {/*              id="mail"*/}
-          {/*              type="email"*/}
-          {/*              className="form-control"*/}
-          {/*              placeholder="Place your email"*/}
-          {/*            />*/}
-          {/*          </div>*/}
-          {/*          <button className="btn btn-dodger-blue-2 rounded-5">*/}
-          {/*            Submit*/}
-          {/*          </button>*/}
-          {/*        </div>*/}
-          {/*      </form>*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
-          {/*  <div className="">*/}
-          {/*    <ul className="d-flex align-items-center list-unstyled mb-0">*/}
-          {/*      <li>*/}
-          {/*        <Link href="/#">*/}
-          {/*          <a className="pl-5 text-white gr-hover-text-dodger-blue-1 font-size-5 px-3">*/}
-          {/*            <i className="fab fa-twitter" />*/}
-          {/*          </a>*/}
-          {/*        </Link>*/}
-          {/*      </li>*/}
-          {/*      <li>*/}
-          {/*        <Link href="/#">*/}
-          {/*          <a className="pl-5 text-white gr-hover-text-dodger-blue-1 font-size-5 px-3">*/}
-          {/*            <i className="fab fa-google" />*/}
-          {/*          </a>*/}
-          {/*        </Link>*/}
-          {/*      </li>*/}
-          {/*      <li>*/}
-          {/*        <Link href="/#">*/}
-          {/*          <a className="pl-5 text-white gr-hover-text-dodger-blue-1 font-size-5 px-3">*/}
-          {/*            <i className="fab fa-linkedin" />*/}
-          {/*          </a>*/}
-          {/*        </Link>*/}
-          {/*      </li>*/}
-          {/*    </ul>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
         </div>
       </div>
     </>
