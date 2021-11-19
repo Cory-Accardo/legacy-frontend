@@ -19,14 +19,24 @@ const SectionDetail = ({ className, ...rest }) => {
                                     data-aos="zoom-in"
                                     data-aos-duration={500}
                                 >
-                                    <img src={sectionImage} alt="shop love image" />
+                                    <img src={sectionImage} alt="shop love image" width="333" className="mb-6"/>
                                     <h5 className="font-size-10 mt-5 mb-5">Community Powered Economic Empowerment.</h5>
-                                    <p className="font-size-7 mb-0 text-black">
-                                        Since 2014 MISLA- Made In South LA, has provided technology and financial literacy bootcamps on an
-                                        ongoing basis to both youth and adults alike. Positioning our MISLA participants to be game changers in the
-                                        tech industry is our overarching intention and we have been able to pair several of our past participants with
-                                        roles within tech, evidence of the employable curriculum style in which we utilize.
+                                    <p className="font-size-7 text-black">
+                                    A Community Centered Economic Empowerment Campaign
                                     </p>
+                                    <p className="font-size-7 text-black">
+                                    Brought to you by Vermont Slauson Economic Development Corporation (VSEDC), ShopLove sparks an economic empowerment movement by supporting and championing local small businesses that offer a diverse range of products and services to the South LA community.
+</p>
+<p className="font-size-7 text-black">
+Small businesses are the heart of the community. By providing the services that residents need to thrive in an area that has historically lacked resources, neighborhoods have options when it comes to food, entertainment, retail, and more.
+ </p>
+ <p className="font-size-7 text-black">
+ This holiday season and beyond, support local small businesses and show them the love they deserve.
+ </p>
+<p className="font-size-7 text-black">
+Put your money where your heart is and ShopLove. 
+
+                                         </p>
                                 </div>
                             </div>
                         </div>

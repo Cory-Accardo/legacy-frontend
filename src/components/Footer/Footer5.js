@@ -14,7 +14,7 @@ const Footer = ({ className, ...rest }) => {
   return (
     <>
       <div
-        className={`bg-dark-cloud pt-15 pt-lg-26 pb-9 ${className}`}
+        className={`bg-black pt-15 pt-lg-26 pb-9 ${className}`}
         {...rest}
       >
         <div className="container">
@@ -28,7 +28,12 @@ const Footer = ({ className, ...rest }) => {
                     <b className="font-weight-bold">ShopLove</b> Cohort:
                   </h5>
                   <p className="font-size-5 mb-0 mt-8 mt-lg-10">
-                    <img src={BrandLogo} alt="brand-logo" />
+                  <Link href="https://vsedc.org/start-here/">
+                    <a target="_blank">
+                    <img src={BrandLogo} alt="brand-logo" width="140" />
+                    </a>
+                  </Link>
+                
                   </p>
                 </div>
               </div>
@@ -41,9 +46,9 @@ const Footer = ({ className, ...rest }) => {
                       <p className="mb-0">
                         <img src={MislaLogo} alt="brand-logo" />
                       </p>
-                      <h5 className="font-size-5 mt-8 mt-lg-10">
+                      <p className="font-size-5 font-weight-light text-white mt-8 mt-lg-10">
                         MISLA, Made In South LA, provides technology, creative and financial literacy bootcamps on an ongoing basis to South LA youth and adults.
-                      </h5>
+                      </p>
                     </div>
                   </div>
                   {/* End Single Widgets */}
@@ -54,9 +59,9 @@ const Footer = ({ className, ...rest }) => {
                         Support MISLA’s Mission:
                       </h5>
                       <div className="d-flex justify-content-between align-items-center">
-                        <img src={QRLogo1} alt="QR Code 1" />
-                        <img src={QRLogo2} alt="QR Code 2" />
-                        <img src={QRLogo3} alt="QR Code 3" />
+                        <a href="https://venmo.com/u/Misla" target="_blank"><img src={QRLogo1} alt="QR Code 1" width="100" /></a>
+                        <a href="https://cash.app/$M1SLA" target="_blank"><img src={QRLogo2} alt="QR Code 2" width="100"  /></a>
+                        <a href="https://www.paypal.com/donate/?business=ZMSR4TPCGSFMC&item_name=Training+South+LA+Youth+in+Coding%2C+Branding%2C+Digital+Marketing.&currency_code=USD" target="_blank"><img src={QRLogo3} alt="QR Code 3" width="100"  /></a>
                       </div>
                     </div>
                   </div>
@@ -70,7 +75,7 @@ const Footer = ({ className, ...rest }) => {
                 <h5 className="font-size-5 mr-5">
                   Designed & Developed by:
                 </h5>
-                <img src={MartyLogo} alt="marty logo" />
+                <a href="https://marty.world/" target="_blank"><img src={MartyLogo} alt="marty logo" /></a>
               </div>
             </div>
             <div className="col-md-6">

@@ -12,7 +12,7 @@ import ModalVideo from "../ModalVideo";
 
 import GlobalContext from "../../context/GlobalContext";
 
-import imgFavicon from "../../assets/shop_love_LOGO_ color_black.png";
+import imgFavicon from "../../assets/favicon.png";
 
 const Loader = styled.div`
   position: fixed;

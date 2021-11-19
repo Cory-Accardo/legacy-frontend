@@ -10,28 +10,35 @@ const CardSection = ({ className, ...rest }) => {
                     {/* Hero Image */}
                     <div className="col-xl-6 col-lg-6 col-md-7 col-xs-8">
                         <div className="pt-lg-3" data-aos="flip-right" data-aos-delay={900}>
-                            <img className="w-100" src={imgM} alt="" />
+                            <img className="w-100" src={imgM} alt="image" />
                         </div>
                     </div>
                     {/* End Hero Image */}
                     {/* Hero Content */}
                     <div className="col-lg-6 col-md-9 col-sm-11">
                         <div
-                            className="mt-8 mt-lg-0 pr-md-11 pr-lg-0 pr-xl-10"
+                            className="mt-8 mt-lg-0 pl-xl-10"
                             data-aos="fade-left"
                             data-aos-delay={750}
                         >
-                            <h1 className="font-size-13 mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
+                            <h1 className="font-size-10 mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
                                 The ShopLove SLASHcard.
                             </h1>
-                            <p className="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">
-                                A discount card with a purpose.<br/>
-                                Our businesses participating in the ShopLove campaign have slashed their prices for a limited time during this holiday season and the ShopLove campaign.<br/>
-                                Can’t decide on just one business to support, want to support more the one ShopLove business?<br/>
-                                Purchase the ShopLove SLASH card today, and get
-                                $250 gift card for $125 or  get a $100 card for $50
-                                for a limited time.
+                            <p className="font-size-7 text-black">
+                            A discount card with a purpose.
                             </p>
+   <p className="font-size-7 text-black">
+     ShopLove businesses have slashed their prices for a limited time during this holiday season. 
+                       
+</p>
+<p className="font-size-7 text-black">
+Want to support more than one ShopLove business?
+</p>
+<p className="font-size-7 text-black">
+Purchase the ShopLove SLASH card today. 
+</p>
+<p className="font-size-7 text-black">
+Get a $250 gift card for $125 or get a $100 card for $50 for a limited time. </p>
                         </div>
                     </div>
                     {/* End Hero Content */}
