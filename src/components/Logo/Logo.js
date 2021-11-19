@@ -29,8 +29,8 @@ const Logo = ({ className = "", logo, ...rest }) => {
                         </Link>
                     </> :
                     <>
-                        <img src={logoB} alt="" className="light-version-logo" />
-                        <img src={logoW} alt="" className="dark-version-logo" />
+                        <img src={logoMain} alt="shop love" className="light-version-logo" />
+                        {/*<img src={logoW} alt="" className="dark-version-logo" />*/}
                     </>
             }
         </>

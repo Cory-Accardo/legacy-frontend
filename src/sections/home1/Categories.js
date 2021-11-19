@@ -4,12 +4,17 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import { Container, Row, Col } from "react-bootstrap";
 
-import img1 from "../../assets/image/home-1/png/analytics.png";
-import img2 from "../../assets/image/home-1/png/business-agent.png";
-import img3 from "../../assets/image/home-1/png/code.png";
-import img4 from "../../assets/image/home-1/png/headphones-2.png";
-import img5 from "../../assets/image/home-1/png/coins.png";
-import img6 from "../../assets/image/home-1/png/drop.png";
+import jordonHotDog from "../../assets/image/homepage/png/categories/jordon-hot-dog.png";
+import studioD from "../../assets/image/homepage/png/categories/studiod-contract.png";
+import myFishStop from "../../assets/image/homepage/png/categories/my-fish-stop.png";
+import hotCoolCafe from "../../assets/image/homepage/png/categories/hot-&-cool-cafe.png";
+import creshawYogaDance from "../../assets/image/homepage/png/categories/creshaw-yoga.png";
+import rideOnBike from "../../assets/image/homepage/png/categories/ride-on-bike.png";
+import martgolsMagic from "../../assets/image/homepage/png/categories/martgols-magic.png";
+import tossItUp from "../../assets/image/homepage/png/categories/toss-it-up.png";
+import pipsOnLaBrea from "../../assets/image/homepage/png/categories/pips-on-labrea.png";
+import freewayEasy from "../../assets/image/homepage/png/categories/freeway-easy.png";
+import deliciousAtDunbar from "../../assets/image/homepage/png/categories/delicious-at-dunbar.png";
 
 const SliderStyled = styled(Slider)`
   .slick-slide div {
@@ -21,34 +26,59 @@ const SliderStyled = styled(Slider)`
 
 const items = [
   {
-    title: "Marketing",
-    image: img1,
-    jobs: 472,
+    title: "Jordan's Hot Dogs",
+    image: jordonHotDog,
+    primaryColor: '#92291D'
   },
   {
-    title: "Human Resource",
-    image: img2,
-    jobs: 172,
+    title: "Studio D",
+    image: studioD,
+    primaryColor: '#A11F61'
   },
   {
-    title: "Developer",
-    image: img3,
-    jobs: 272,
+    title: "My Fish Stop",
+    image: myFishStop,
+    primaryColor: '#F02E2D'
   },
   {
-    title: "Customer Support",
-    image: img4,
-    jobs: 2172,
+    title: "Hot & Cool Cafe",
+    image: hotCoolCafe,
+    primaryColor: '#000000'
   },
   {
-    title: "Finance",
-    image: img5,
-    jobs: 422,
+    title: "Crenshaw Yoga & Dance",
+    image: creshawYogaDance,
+    primaryColor: '#9D882F'
   },
   {
-    title: "Design",
-    image: img6,
-    jobs: 222,
+    title: "Ride On! Bike Shop",
+    image: rideOnBike,
+    primaryColor: '#F3592D'
+  },
+  {
+    title: "Martgol’s Magic",
+    image: martgolsMagic,
+    primaryColor: '#E3A120'
+  },
+  {
+    title: "Toss It Up Salads",
+    image: tossItUp,
+    primaryColor: '#62AF2F'
+  },
+  {
+    title: "PIPS On La Brea",
+    image: pipsOnLaBrea,
+    primaryColor: '#600A0F'
+  },
+  {
+    title: "Freeway Easy",
+    image: freewayEasy,
+    primaryColor: '#00CAF2'
+  },
+  {
+    title: "Delicious at the Dunbar",
+    image: deliciousAtDunbar,
+    primaryColor: '#7B0203'
   },
 ];
 
@@ -220,31 +250,31 @@ const Categories = ({ className, ...rest }) => {
                 data-aos-delay="300"
               >
                 <h2 className="font-size-11 font-weight-medium mb-0">
-                  Explore <br className="d-none d-md-block"></br> by category
+                  Show Some Love,<br className="d-none d-md-block"></br> Shop local.
                 </h2>
               </div>
             </Col>
             <Col md="4">
               <div className="l1-category-slider text-center text-md-right">
                 <button
-                  className="slick-prev slick-arrow"
+                  className="slick-prev slick-arrow bg-black"
                   aria-label="Previous"
                   type="button"
                   onClick={() => {
                     elSlider.current.slickPrev();
                   }}
                 >
-                  <i className="icon icon-small-left"></i>
+                  <i className="icon icon-small-left" style={{ color: '#39B54A' }}></i>
                 </button>
                 <button
-                  className="slick-next slick-arrow"
+                  className="slick-next slick-arrow bg-black"
                   aria-label="Next"
                   type="button"
                   onClick={() => {
                     elSlider.current.slickNext();
                   }}
                 >
-                  <i className="icon icon-small-right"></i>
+                  <i className="icon icon-small-right" style={{ color: '#E50707' }}></i>
                 </button>
               </div>
             </Col>
@@ -256,22 +286,19 @@ const Categories = ({ className, ...rest }) => {
           data-aos-duration="1200"
         >
           <SliderStyled ref={elSlider} {...slickSettings} className="h1-category-slider">
-            {items.map(({ link = "/#", title, image, jobs }, index) => (
+            {items.map(({ link = "/#", title, image, jobs, primaryColor }, index) => (
               <Link key={index} href={link}>
                 <a
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
                   tabIndex="-1"
                 >
-                  <div className="bg-white shadow-2 pl-10 pr-5 pt-19 pb-6 min-w-255 min-h-222 gr-hover-1 mb-15 mb-lg-25">
-                    <div className="mb-8">
-                      <img src={image} alt="" />
+                  <div className="bg-white shadow-2 min-w-255 min-h-222 gr-hover-1 mb-15 mb-lg-25 d-flex justify-content-between align-items-center flex-column" style={{ minHeight: '320px !important' }}>
+                    <div className="mb-8 mt-8 d-flex justify-content-center align-items-center">
+                      <img src={image} alt="" className="max-w-193" />
                     </div>
-                    <h4 className="font-size-7 font-weight-medium text-dark-cloud mb-1">
+                    <h4 className="font-size-7 font-weight-medium text-white text-center w-100 mb-0" style={{ padding: '15px 0px !important', background: `${primaryColor}`, marginBottom: '0 !important' }}>
                       {title}
                     </h4>
-                    <p className="font-size-3 text-bali-gray mb-0 letter-spacing-reset">
-                      {jobs} Jobs
-                    </p>
                   </div>
                 </a>
               </Link>

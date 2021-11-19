@@ -55,6 +55,7 @@ export const menuItems = [
           { name: "jordanshotdogs", label: "Jordan’s Hot Dogs", isExternal: true },
           { name: "deliciousatthedunbar", label: "Delicious at the Dunbar", isExternal: true },
           { name: "misla", label: "Misla", isExternal: true },
+          { name: "studiodcontractfinishes", label: "Studiod Contract Finishes", isExternal: true },
         ],
       },
       {

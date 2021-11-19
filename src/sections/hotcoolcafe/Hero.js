@@ -27,13 +27,12 @@ const Hero = ({ className, ...rest }) => {
                 Warm Winter Cozy Kit.
               </h1>
               <p className="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">
-                Crenshaw Coffee Co. has created a unique taste for Monkey Paw Production. This is a Limited Edition Specialty Coffee Blend. For a limited time you can purchase our specialty coffee "The MonkeyPaw Blend".
-              </p>
-              <p className="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">
-                A versatile and full bodied blend with a flavor profile of burnt caramel, 62% cocoa, and cranberry orange scone.
+                Hot & Cool is offering it’s seasonal bundle feautring the H&C logo in a sleek black finish on our quality mug which you can use to warm up to Crenshaw Coffee Co.’s  MonkeyPaw Blend,a versatile and full bodied blend with a flavor profile of burnt caramel, 62% cocoa, and cranberry orange scone.<br/>
+                Enjoy this wonderful blend while wearing our 100% Cotton signature H&C hoodie. Purchase this seasonal bundle and enjoy an overall discount of $15 for a limited time only.<br/>
+                Get your $55 Warm Winter Kozy Kit today!
               </p>
               <div className="mt-10">
-                  <a onClick={()=> purchase('prod_KbV4Z107OYcnDv')} target="_blank" className="btn btn-dark-green btn-3 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
+                  <a href="/#" onClick={()=> purchase('prod_KbV4Z107OYcnDv')} target="_blank" className="btn btn-dark-green btn-3 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
                     Order Now
                   </a>
               </div>

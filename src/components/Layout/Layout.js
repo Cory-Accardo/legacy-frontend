@@ -12,7 +12,7 @@ import ModalVideo from "../ModalVideo";
 
 import GlobalContext from "../../context/GlobalContext";
 
-import imgFavicon from "../../assets/favicon.png";
+import imgFavicon from "../../assets/shop_love_LOGO_ color_black.png";
 
 const Loader = styled.div`
   position: fixed;
@@ -69,7 +69,7 @@ const Layout = ({ children, pageContext }) => {
     return (
       <>
         <Head>
-          <title>Finity</title>
+          <title>$hop Love</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
         </Head>
@@ -89,7 +89,7 @@ const Layout = ({ children, pageContext }) => {
     <>
       <>
         <Head>
-          <title>Finity</title>
+          <title>$hop Love</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
           <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
         </Head>

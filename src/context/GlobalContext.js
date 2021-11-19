@@ -12,8 +12,8 @@ export const themeConfigDefault = {
   headerButton: (
     <>
       <Link href="/#">
-        <a className="btn heading-default-color gr-hover-text-primary">
-          + Submit New Job
+        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3" style={{ background: '#00793D', borderColor: '#00793D' }}>
+          $hop Love
         </a>
       </Link>
     </>
@@ -21,7 +21,7 @@ export const themeConfigDefault = {
   headerClassName: "site-header--menu-logo-middle",
   headerSocial: false,
   headerLogoClassName: "",
-  footerStyle: "style1",
+  footerStyle: "style5",
   footerClassName: "",
   logoImage: null
 };
