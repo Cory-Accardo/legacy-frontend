@@ -5,6 +5,7 @@ import Hero from "../sections/hotcoolcafe/Hero";
 import MusicArea from "../sections/hotcoolcafe/MusicArea";
 import Checkout from "../sections/hotcoolcafe/Checkout";
 import SectionDetail from "../sections/hotcoolcafe/SectionDetail";
+import CardSection from "../sections/hotcoolcafe/CardSection";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/hotcool/png/logo-main.png';
 
@@ -29,6 +30,7 @@ const HotCoolCafe = () => {
                 <Hero className="position-relative pt-25 pt-md-31 pt-lg-35 pb-14 pb-md-19 pb-lg-33 position-relative overflow-hidden" />
                 <Checkout className="bg-black pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
                 <SectionDetail className="bg-default-5 pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
+                <CardSection className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
                 <ClientSection className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
                 {/*<MusicArea className="bg-default-5 pt-13 pt-md-18 pt-lg-24 pb-9 pb-md-13 pb-lg-28" />*/}
             </PageWrapper>

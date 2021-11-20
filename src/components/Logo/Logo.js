@@ -21,15 +21,15 @@ const Logo = ({ className = "", logo, ...rest }) => {
                                 <img src={vsedcLogo} alt="vsedc logo" className="light-version-logo pr-9" style={{ ...styledVsedcLogo, borderRight: '2px solid #ddd' }} />
                             </a>
                         </Link>
-                        <Link href="/#">
+                        <Link href="/">
                             <a className={`${className} d-flex justify-content-center align-items-center`} {...rest}>
-                                <img src={logoMain} alt="shop love" className="light-version-logo pr-9 pl-7" style={{ borderRight: '2px solid #ddd' }} />
+                                <img src={logoMain} alt="shop love" className="light-version-logo pr-9 pl-7" width="150" style={{ borderRight: '2px solid #ddd' }} />
                                 <img src={logo} alt="logo image" className="light-version-logo pl-7" />
                             </a>
                         </Link>
                     </> :
                     <>
-                        <img src={logoMain} alt="shop love" className="light-version-logo" />
+                      <a href="/"> <img src={logoMain} alt="shop love" className="light-version-logo" width="65" /> </a>
                         {/*<img src={logoW} alt="" className="dark-version-logo" />*/}
                     </>
             }

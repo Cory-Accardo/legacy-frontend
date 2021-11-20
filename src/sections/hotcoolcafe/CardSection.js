@@ -39,7 +39,17 @@ Purchase the ShopLove SLASH card today.
 </p>
 <p className="font-size-7 text-black">
 Get a $250 gift card for $125 or get a $100 card for $50 for a limited time. </p>
-
+<div className="mt-10">
+<button onClick={()=> purchase('prod_KctTzvwDN7RVpc')} className="btn btn-dark-green btn-4 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
+$250 card for $125 <br/>
+BUY NOW
+</button>
+&nbsp; &nbsp;&nbsp;
+<button onClick={()=> purchase('prod_KcuPPyG5tMjg6O')} className="btn btn-dark-green btn-4 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
+$100 card for $50 <br/>
+BUY NOW
+</button>
+ </div>
                         </div>
                     </div>
                     {/* End Hero Content */}

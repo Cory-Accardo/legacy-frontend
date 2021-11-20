@@ -27,56 +27,67 @@ const SliderStyled = styled(Slider)`
 const items = [
   {
     title: "Jordan's Hot Dogs",
+    link: "jordanshotdogs",
     image: jordonHotDog,
     primaryColor: '#92291D'
   },
   {
     title: "Studio D",
+    link: "studiodcontractfinishes",
     image: studioD,
     primaryColor: '#A11F61'
   },
   {
     title: "My Fish Stop",
+    link: "myfishstop",
     image: myFishStop,
     primaryColor: '#F02E2D'
   },
   {
     title: "Hot & Cool Cafe",
+    link: "hotcoolcafe",
     image: hotCoolCafe,
     primaryColor: '#000000'
   },
   {
     title: "Crenshaw Yoga & Dance",
+    link: "crenshawyogadance",
     image: creshawYogaDance,
     primaryColor: '#9D882F'
   },
   {
     title: "Ride On! Bike Shop",
+    link: "rideon",
     image: rideOnBike,
     primaryColor: '#F3592D'
   },
   {
     title: "Martgol’s Magic",
+    link: "martgolsmagic",
     image: martgolsMagic,
     primaryColor: '#E3A120'
   },
   {
     title: "Toss It Up Salads",
+    link: "tossItup",
     image: tossItUp,
     primaryColor: '#62AF2F'
   },
   {
     title: "PIPS On La Brea",
+    link: "pipsonlabreas",
     image: pipsOnLaBrea,
     primaryColor: '#600A0F'
   },
   {
     title: "Freeway Easy",
+    link: "freewayeasy",
     image: freewayEasy,
     primaryColor: '#00CAF2'
   },
   {
     title: "Delicious at the Dunbar",
+    link: "deliciousatthedunbar",
     image: deliciousAtDunbar,
     primaryColor: '#7B0203'
   },
@@ -286,7 +297,7 @@ const Categories = ({ className, ...rest }) => {
           data-aos-duration="1200"
         >
           <SliderStyled ref={elSlider} {...slickSettings} className="h1-category-slider">
-            {items.map(({ link = "/#", title, image, jobs, primaryColor }, index) => (
+            {items.map(({ link, title, image, jobs, primaryColor }, index) => (
               <Link key={index} href={link}>
                 <a
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
@@ -294,7 +305,7 @@ const Categories = ({ className, ...rest }) => {
                 >
                   <div className="bg-white shadow-2 min-w-255 min-h-222 gr-hover-1 mb-15 mb-lg-25 d-flex justify-content-between align-items-center flex-column" style={{ minHeight: '320px !important' }}>
                     <div className="mb-8 mt-8 d-flex justify-content-center align-items-center">
-                      <img src={image} alt="" className="max-w-193" />
+                      <img src={image} alt="Landing image" className="max-w-193" />
                     </div>
                     <h4 className="font-size-7 font-weight-medium text-white text-center w-100 mb-0" style={{ padding: '15px 0px !important', background: `${primaryColor}`, marginBottom: '0 !important' }}>
                       {title}
