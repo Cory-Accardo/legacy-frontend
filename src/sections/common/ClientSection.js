@@ -28,10 +28,11 @@ const ClientSection = ({ className, ...rest }) => {
                                 </div>
                                 <div className="col-md-6 order-xl-2 order-lg-2 order-md-2 order-1">
                                     <div className="d-flex text-center flex-column align-items-center justify-content-center">
-                                        <img src={shopLove} alt="shop love" style={{...maxWidth, maxWidth: '80px'}} />
-                                        <p className="font-size-7 mb-0 font-weight-bold text-black">
+                                        <img src={shopLove} alt="shop love" style={{...maxWidth, maxWidth: '100px'}} />
+                                        <br/>
+                                        <h6 className="font-size-7 mb-0 font-weight-bold text-black">
                                             community powered economic empowerment
-                                        </p>
+                                        </h6>
                                     </div>
                                 </div>
                                 <div className="col-md-3 order-xl-3 order-lg-3 order-md-3 order-3">
@@ -40,18 +41,21 @@ const ClientSection = ({ className, ...rest }) => {
                             </div>
                             <div className="d-flex flex-column align-items-center justify-content-center mt-5 text-center">
                                 <div className="mt-0 mb-4">
-                                    <p className="font-size-6 mb-0 font-weight-bold text-black">
+                                    <p className="font-size-6 font-weight-500 mb-0 text-black">
                                         Powered by
                                     </p>
+                                    <br/>
                                 </div>
                                 <div className="mb-3">
-                                    <img src={VSEDCLogo} alt="vsedc image" />
+                                    <img src={VSEDCLogo} alt="vsedc image" width="150" />
                                 </div>
+                                <br/>
                                 <div className="mt-0 mb-4">
-                                    <p className="font-size-6 mb-0 font-weight-bold text-black">
-                                        Since its inception, VSEDC has delivered economic resources to communities that often live
-                                        in the shadows. Because of systematic barriers that make it more difficult to secure business support, VSEDC plays an instrumental role in making entrepreneurial dreams a reality.
+                                    <p className="font-size-6 mb-0 font-weight-normal">
+                                        Since its inception, VSEDC has delivered economic resources to communities that often live<br/>
+                                        in the shadows. Because of systematic barriers that make it more difficult to secure business<br/> support, VSEDC plays an instrumental role in making entrepreneurial dreams a reality.
                                     </p>
+                                    
                                 </div>
                             </div>
                         </div>

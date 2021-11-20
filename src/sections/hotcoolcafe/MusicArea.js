@@ -30,7 +30,7 @@ const MusicArea = ({ className, ...rest }) => {
               <h2 className="font-size-10 letter-spacing-n83 mb-6">
                 Hot & Cool Cafe & <span style={{ color: '#552C2C' }}>Crenshaw Coffee Co.</span>
               </h2>
-              <p className="font-size-7 mb-0">
+              <p className="font-size-7 mb-0 ">
                 Hot & Cool brings fresh food and unconditional love to Leimert Park community and beyond. Hot and Cool's roots started in coffee roasting and
                 we are now excited to have created our very own Brand of Coffee.
                 Check out our Crenshaw Coffee Co. blends & the Best Vegan Bar food in L.A.
@@ -153,7 +153,7 @@ const MusicArea = ({ className, ...rest }) => {
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="d-flex align-items-center justify-content-center py-6 mr-xl-15">
                 <div className="mr-7">
-                  <img src={location} alt="" />
+                  <img src={location} alt="location" />
                 </div>
                 <div className="mt-0">
                   <h4 className="font-size-8 mb-0">RideOn! Bike Shop</h4>

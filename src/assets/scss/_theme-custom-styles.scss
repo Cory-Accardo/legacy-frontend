@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 /* Border Color */
 .border-golden-yellow {
     border-color: $golden-yellow !important;
@@ -8,8 +7,32 @@
 .border-custom-white {
     border-color: rgba(236, 239, 244, 0.3) !important;
 }
-
-
+body,p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-40 {
+    font-size: 40px;
+}
+.btn.btn-medium {
+    min-width: 120px;
+    height: 50px;
+    font-size: 13px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Glitten-Regular" !important;
+    font-weight: 400;
+}
+.font-size-13 {
+    font-size: 50px;
+}
+.main-menu > li > .nav-link {
+    font-weight: 700;
+}
 /*
 .footer-social-link {
     li {

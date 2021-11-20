@@ -21,9 +21,7 @@ const SectionDetail = ({ className, ...rest }) => {
                                 >
                                     <img src={sectionImage} alt="shop love image" width="333" className="mb-6"/>
                                     <h5 className="font-size-10 mt-5 mb-5">Community Powered Economic Empowerment.</h5>
-                                    <p className="font-size-7 text-black">
-                                    A Community Centered Economic Empowerment Campaign
-                                    </p>
+                                
                                     <p className="font-size-7 text-black">
                                     Brought to you by Vermont Slauson Economic Development Corporation (VSEDC), ShopLove sparks an economic empowerment movement by supporting and championing local small businesses that offer a diverse range of products and services to the South LA community.
 </p>
@@ -33,10 +31,11 @@ Small businesses are the heart of the community. By providing the services that 
  <p className="font-size-7 text-black">
  This holiday season and beyond, support local small businesses and show them the love they deserve.
  </p>
-<p className="font-size-7 text-black">
+<p className="font-size-7 font-weight-bold text-black">
 Put your money where your heart is and ShopLove. 
 
                                          </p>
+
                                 </div>
                             </div>
                         </div>

@@ -23,10 +23,10 @@ const Footer = ({ className, ...rest }) => {
               {/* Brand Logo */}
               <div className="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-7">
                 <div className="brand-logo mb-10 mb-lg-0 dark-mode-texts pr-lg-10 pr-xl-0 pt-lg-3">
-                  <h5 className="font-weight-light">
+                  <p className="font-weight-light text-white">
                     <b className="font-weight-bold">Sign-Up</b> for the next<br/>
                     <b className="font-weight-bold">ShopLove</b> Cohort:
-                  </h5>
+                  </p>
                   <p className="font-size-5 mb-0 mt-8 mt-lg-10">
                   <Link href="https://vsedc.org/start-here/">
                     <a target="_blank">
@@ -55,9 +55,9 @@ const Footer = ({ className, ...rest }) => {
                   {/* Single Widgets */}
                   <div className="col-sm-6 col-xs-6">
                     <div className="brand-logo mb-10 mb-lg-0 dark-mode-texts pr-lg-10 pr-xl-0 pt-lg-3">
-                      <h5 className="font-size-5 mt-8 mt-lg-10">
+                      <p className="font-size-5 mt-8 mt-lg-10">
                         Support MISLA’s Mission:
-                      </h5>
+                      </p>
                       <div className="d-flex justify-content-between align-items-center">
                         <a href="https://venmo.com/u/Misla" target="_blank"><img src={QRLogo1} alt="QR Code 1" width="100" /></a>
                         <a href="https://cash.app/$M1SLA" target="_blank"><img src={QRLogo2} alt="QR Code 2" width="100"  /></a>
@@ -72,17 +72,17 @@ const Footer = ({ className, ...rest }) => {
           <div className="row border-top border-default-color dark-mode-texts d-flex pt-11 align-items-center">
             <div className="col-md-6">
               <div className="d-flex align-items-center">
-                <h5 className="font-size-5 mr-5">
+                <p className="font-size-5 mr-5 font-weight-normal text-white">
                   Designed & Developed by:
-                </h5>
+                </p>
                 <a href="https://marty.world/" target="_blank"><img src={MartyLogo} alt="marty logo" /></a>
               </div>
             </div>
             <div className="col-md-6">
               <div className="d-flex justify-content-end align-items-end">
-                <h5 className="font-size-5">
+                <p className="font-size-5 font-weight-normal text-white">
                   @ 2021 Copyright.
-                </h5>
+                </p>
               </div>
             </div>
           </div>

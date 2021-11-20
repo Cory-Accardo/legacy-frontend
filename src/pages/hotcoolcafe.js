@@ -27,7 +27,7 @@ const HotCoolCafe = () => {
                     footerStyle: "style5",
                 }}
             >
-                <Hero className="position-relative pt-25 pt-md-31 pt-lg-35 pb-14 pb-md-19 pb-lg-33 position-relative overflow-hidden" />
+                <Hero className="position-relative pt-25 pt-md-31 pt-lg-33 pb-14 pb-md-19 pb-lg-25 position-relative overflow-hidden" />
                 <Checkout className="bg-black pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
                 <SectionDetail className="bg-default-5 pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
                 <CardSection className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
