@@ -15,8 +15,14 @@ body,p {
 .font-weight-500 {
     font-weight: 500;
 }
+.arrow-down {
+    position: absolute; right: 0 ; bottom:0;
+}
 .font-40 {
     font-size: 40px;
+}
+.btn:hover {
+    opacity: .8;
 }
 .btn.btn-medium {
     min-width: 120px;
