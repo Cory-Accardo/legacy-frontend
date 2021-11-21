@@ -14,11 +14,9 @@ import backgroundImage from "../../assets/image/homepage/png/hero-image.png";
 const Hero = ({ className, ...rest }) => {
   return (
     <div className={className} {...rest}>
-      <div className="pt-15 pt-lg-20">
-        <div
-          className="bg-img-1 bg-images pt-18 pt-lg-25 pt-xl-33 mx-lg-13 mx-xl-15 bg-gradient-2"
-          style={{ backgroundImage: `url(${backgroundImage})`, minHeight: '1200px' }}
-        >
+      <div className="container-fluid mt-19">
+        <div className="pl-12 pr-12">
+        <img src={backgroundImage} alt="bg-image" width="100%" />
         </div>
       </div>
     </div>

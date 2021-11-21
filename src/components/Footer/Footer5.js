@@ -75,7 +75,7 @@ const Footer = ({ className, ...rest }) => {
                 <p className="font-size-5 mr-5 font-weight-normal text-white">
                   Designed & Developed by:
                 </p>
-                <a href="https://marty.world/" target="_blank"><img src={MartyLogo} alt="marty logo" /></a>
+                <a href="https://marty.world/" target="_blank"><img src={MartyLogo} alt="marty logo" width="160" /></a>
               </div>
             </div>
             <div className="col-md-6">

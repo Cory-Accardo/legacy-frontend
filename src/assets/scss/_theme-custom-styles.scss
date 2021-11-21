@@ -29,6 +29,16 @@ body,p {
     height: 50px;
     font-size: 13px;
 }
+.min-wauto {
+    min-width: auto!important;
+}
+.bg-default-home {
+    background: rgba(233, 235, 237, 0.75);
+}
+
+.bg-cat {
+    background:  #F8F8F8
+}
 h1,h2,h3,h4,h5,h6 {
     font-family: "Glitten-Regular" !important;
     font-weight: 400;

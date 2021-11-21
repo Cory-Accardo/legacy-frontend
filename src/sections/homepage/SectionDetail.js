@@ -3,7 +3,7 @@ import sectionImage from '../../assets/image/homepage/png/section-image.png';
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
-        <div className={className} {...rest}>
+        <section id="about" className={className} {...rest}>
             <div className="container">
                 <div className="row align-items-center">
                     {/* Hero Content */}
@@ -22,13 +22,13 @@ const SectionDetail = ({ className, ...rest }) => {
                                     <img src={sectionImage} alt="shop love image" width="333" className="mb-6"/>
                                     <h5 className="font-size-10 mt-5 mb-5">Community Powered Economic Empowerment.</h5>
                                 
-                                    <p className="font-size-7 text-black">
+                                    <p className="font-size-7">
                                     Brought to you by Vermont Slauson Economic Development Corporation (VSEDC), ShopLove sparks an economic empowerment movement by supporting and championing local small businesses that offer a diverse range of products and services to the South LA community.
 </p>
-<p className="font-size-7 text-black">
+<p className="font-size-7">
 Small businesses are the heart of the community. By providing the services that residents need to thrive in an area that has historically lacked resources, neighborhoods have options when it comes to food, entertainment, retail, and more.
  </p>
- <p className="font-size-7 text-black">
+ <p className="font-size-7">
  This holiday season and beyond, support local small businesses and show them the love they deserve.
  </p>
 <p className="font-size-7 font-weight-bold text-black">
@@ -43,7 +43,7 @@ Put your money where your heart is and ShopLove.
                     {/* End Hero Content */}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

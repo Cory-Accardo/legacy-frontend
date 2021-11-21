@@ -12,7 +12,7 @@ export const menuItems = [
   //   ],
   // },
   {
-    name: "about",
+    name: "#about",
     label: "About",
     isExternal: false,
   },

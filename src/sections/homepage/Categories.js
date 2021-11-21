@@ -250,17 +250,17 @@ const Categories = ({ className, ...rest }) => {
 
   return (
     <>
-      <section  id="slashcard" className={className} {...rest}>
+      <section id="slashcard" className={className} {...rest}>
         <Container>
-          <Row className="row align-items-center justify-content-between mb-12 mb-lg-19">
+          <Row className="row align-items-center justify-content-between mb-6 mb-lg-19">
             <Col sm="12" md="6" lg="6" xl="5">
               <div
-                className="mb-8 mb-md-3 text-center text-md-left"
+                className="mb-5 text-center text-md-left"
                 data-aos="fade-right"
                 data-aos-duration="800"
                 data-aos-delay="300"
               >
-                <h2 className="font-size-11 font-weight-medium mb-0">
+                <h2 className="font-40 mb-0">
                   Show Some Love,<br className="d-none d-md-block"></br> Shop local.
                 </h2>
               </div>
@@ -299,15 +299,15 @@ const Categories = ({ className, ...rest }) => {
           <SliderStyled ref={elSlider} {...slickSettings} className="h1-category-slider">
             {items.map(({ link, title, image, jobs, primaryColor }, index) => (
               <Link key={index} href={link}>
-                <a
+                <a target="_blank"
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
                   tabIndex="-1"
                 >
-                  <div className="bg-white shadow-2 min-w-255 min-h-222 gr-hover-1 mb-15 mb-lg-25 d-flex justify-content-between align-items-center flex-column" style={{ minHeight: '320px !important' }}>
-                    <div className="mb-8 mt-8 d-flex justify-content-center align-items-center">
+                  <div className="bg-cat shadow-2 min-w-255 min-h-222 gr-hover-1 text-center">
+                    <div className="mb-8 mt-8">
                       <img src={image} alt="Landing image" className="max-w-193" />
                     </div>
-                    <h4 className="font-size-7 font-weight-medium text-white text-center w-100 mb-0" style={{ padding: '15px 0px !important', background: `${primaryColor}`, marginBottom: '0 !important' }}>
+                    <h4 className="font-size-6 p-2 font-weight-medium text-white text-center w-100 mb-0" style={{ padding: '15px 0px !important', background: `${primaryColor}`, marginBottom: '0 !important' }}>
                       {title}
                     </h4>
                   </div>

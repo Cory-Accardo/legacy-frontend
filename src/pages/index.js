@@ -12,10 +12,10 @@ const IndexPage = () => {
     <>
       <PageWrapper>
         <Hero className="position-relative z-index-1" />
-        <SectionDetail className="pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
-        <Categories className="bg-default-home pt-lg-13 pb-md-7 pb-lg-11 position-relative" />
-        <CardSection className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
-        <ClientSection className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
+        <SectionDetail className=" pt-12 pb-14" />
+        <Categories className="bg-default-home pt-20 pb-22 position-relative" />
+        <CardSection className="bg-transparent pt-12 pb-12" />
+        <ClientSection className="bg-transparent pt-lg-12 pb-14" />
       </PageWrapper>
     </>
   );

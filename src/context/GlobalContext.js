@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import BrandLogo from '../assets/image/VSEDC-logo-1.png';
+
 
 const GlobalContext = React.createContext();
 
@@ -11,11 +13,18 @@ export const themeConfigDefault = {
   headerFluid: true,
   headerButton: (
     <>
-      <Link href="/#">
-        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3" style={{ background: '#00793D', borderColor: '#00793D' }}>
+    <div className="d-flex align-items-center justify-content-end">
+      <Link href="/">
+        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" style={{ background: '#00793D', borderColor: '#00793D' }}>
           $hop Love
         </a>
       </Link>
+      <Link href="https://vsedc.org/">
+        <a className="d-inline-block min-wauto" target="_blank">
+          <img src={BrandLogo} alt="logo" width="60"/>
+        </a>
+      </Link>
+      </div>
     </>
   ),
   headerClassName: "site-header--menu-logo-middle",
