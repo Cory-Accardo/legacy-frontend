@@ -9,17 +9,11 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <div
-                            className="mt-8 mt-lg-0"
-                            data-aos="fade-right"
-                            data-aos-delay={500}
-                        >
-                            <div className="d-flex align-items-center justify-content-center">
-                                <div className="mt-0">
-                                    <p className="font-size-6 mb-0 text-white font-weight-bold">
-                                        Visit MyFishStop.com to Explore oue Catering + Menu Items. You buy it, We Fry It!
-                                    </p>
-                                </div>
+                        <div>
+                            <div className="text-center">
+                                <p className="font-size-7 mb-0 text-white font-weight-bold">
+                                    Visit MyFishStop.com to Explore oue Catering + Menu Items. You buy it, We Fry It!
+                                </p>
                             </div>
                         </div>
                     </div>

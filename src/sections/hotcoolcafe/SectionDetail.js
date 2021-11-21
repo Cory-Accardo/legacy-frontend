@@ -8,7 +8,7 @@ const SectionDetail = ({ className, ...rest }) => {
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div
-                            className="mt-8 mt-lg-0"
+                            className=" mt-lg-0"
                             data-aos="fade-right"
                             data-aos-delay={500}
                         >
@@ -25,6 +25,11 @@ const SectionDetail = ({ className, ...rest }) => {
                                     we are now excited to have created our very own Brand of Coffee.
                                     Check out our Crenshaw Coffee Co. blends & the Best Vegan Bar food in L.A.
                                 </p>
+                                <div className="mt-10 text-center">
+                    <a href="#" target="_blank" className="btn btn-black btn-1 rounded-5">
+                        Visit website
+                    </a>
+                </div>
                             </div>
                         </div>
                     </div>

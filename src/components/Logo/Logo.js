@@ -24,9 +24,10 @@ const Logo = ({ className = "", logo, ...rest }) => {
                         <Link href="/">
                             <a className={`${className} d-flex justify-content-center align-items-center`} {...rest}>
                                 <img src={logoMain} alt="shop love" className="light-version-logo pr-9 pl-7" height="65" style={{ borderRight: '2px solid #ddd' }} />
-                                <img src={logo} alt="logo image" height="65" className="light-version-logo pl-7" />
                             </a>
                         </Link>
+                        <img src={logo} alt="logo image" height="65" className="light-version-logo pl-7" />
+
                     </> :
                     <>
                       <a href="/"> <img src={logoMain} alt="shop love" className="light-version-logo" width="65" /> </a>

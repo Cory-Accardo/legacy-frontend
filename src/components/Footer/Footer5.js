@@ -14,11 +14,11 @@ const Footer = ({ className, ...rest }) => {
   return (
     <>
       <div
-        className={`bg-black pt-15 pt-lg-26 pb-9 ${className}`}
+        className={`bg-black pt-18 pb-9 ${className}`}
         {...rest}
       >
         <div className="container">
-          <div className="pb-5 pb-lg-22">
+          <div className="pb-5 pb-lg-13">
             <div className="row justify-content-lg-between">
               {/* Brand Logo */}
               <div className="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-7">

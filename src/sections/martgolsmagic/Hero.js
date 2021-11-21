@@ -1,5 +1,5 @@
 import React from "react";
-
+import arrow from "../../assets/image/arrow.png";
 import imageUrl from "../../assets/image/martgolsmagic/png/hero-image-1.png";
 import heroCtaBtnImage from "../../assets/image/martgolsmagic/png/hero-cta-btn-image.png";
 
@@ -15,8 +15,8 @@ const Hero = ({ className, ...rest }) => {
               data-aos="fade-right"
               data-aos-delay={500}
             >
-              <h1 className="font-size-11 mb-9"><span style={{ color: '#FFD706' }}>Martgol's Magic</span> <br /> Car Care Products.</h1>
-              <p className="font-size-8 mb-lg-13 pr-sm-15 pr-lg-8 pr-xl-15">
+              <h1 className="font-size-13 mb-9"><span style={{ color: '#FFD706' }}>Martgol's Magic</span> <br /> Car Care Products.</h1>
+              <p className="font-size-7">
                 Aston martins, ferraris, and Bentleys find their way to the unassuming parking structure in a quiet corner of Beverly Hills where Martgol’s Magic is housed. Here Martgol Beasley, who specializes in the detailing and paint restoration of upscale cars, applies 30-plus years of experience (along with a magnifying glass and a fine-hair brush) to techniques such as “claying,” in which a bar of clay is dragged lightly across a vehicle’s surface to remove small amounts of grime, tar, and rust.
               </p>
               <div className="d-flex align-items-center py-6 mr-xl-15">
@@ -32,11 +32,27 @@ const Hero = ({ className, ...rest }) => {
                     <img src={heroCtaBtnImage} alt="" />
                   </a>
                 </div>
-                <div className="mt-0">
+                <div>
                   <h4 className="font-size-8 mb-0">Schedule a Wash & Detailing </h4>
                   <p className="font-size-6 mb-0">
-                    Experience Martgol’s Magic high-end detailing service.
+                    Experience Martgol’s Magic<br /> high-end detailing service.
                   </p>
+                </div>
+
+              </div>
+              <div className="mt-8">
+                <div class="row align-items-center">
+                  <div className="col-lg-7">
+                    <p className="font-size-5 mb-3 "> Looking for more savings?</p>
+                    <p className="font-size-5 mb-0">Scroll down to discover the SLASHcard</p>
+                    <p className="font-size-5 mb-0">50% discount card, for a limited time.</p>
+                    <div className="arrow-down">
+                      <img src={arrow} alt="arrow" />
+                    </div>
+                  </div>
+                  <div className="col-lg-5">
+
+                  </div>
                 </div>
               </div>
             </div>

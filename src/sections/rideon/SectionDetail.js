@@ -22,7 +22,7 @@ const SectionDetail = ({ className, ...rest }) => {
                                     Get your <span style={{ color: '#F3592D' }}>RideOn!</span>
                                 </h2>
                                 <p className="font-size-7 mb-0">
-                                    Order Online. Pickup In-Store. Go Ride.It’s fast. It’s easy. And it’s free! Simply find the bike or gear of your dreams online, and we’ll have it ready for you when you arrive.
+                                    Order Online. Pickup In-Store. Go Ride.<br/>It’s fast. It’s easy. And it’s free! Simply find the bike or gear of your<br/> dreams online, and we’ll have it ready for you when you arrive.
                                 </p>
                             </div>
                             <div className="d-flex align-items-center justify-content-center mr-xl-15">

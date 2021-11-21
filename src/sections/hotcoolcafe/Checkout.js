@@ -10,16 +10,14 @@ const Hero = ({ className, ...rest }) => {
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div
-                            className="mt-8 mt-lg-0"
+                            className=" mt-lg-0"
                             data-aos="fade-right"
                             data-aos-delay={500}
                         >
-                            <div className="d-flex align-items-center justify-content-center">
-                                <div className="mt-0">
-                                    <p className="font-size-6 mb-0 text-white">
+                            <div className="text-center">
+                            <p className="font-size-6 mb-0 text-white">
                                         Hot + Cool Cafe proudly serves innovative and healthy vegan food. See More!
-                                    </p>
-                                </div>
+                             </p>
                             </div>
                         </div>
                     </div>

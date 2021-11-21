@@ -4,7 +4,7 @@ import imgM from "../../assets/image/homepage/png/section-image-1.png";
 
 const CardSection = ({ className, ...rest }) => {
     return (
-        <div className={className} {...rest}>
+        <section className={className} {...rest}>
             <div className="container border-bottom pt-12 pb-16">
                 <div className="row align-items-center">
                     {/* Hero Image */}
@@ -52,7 +52,7 @@ const CardSection = ({ className, ...rest }) => {
                     {/* End Hero Content */}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

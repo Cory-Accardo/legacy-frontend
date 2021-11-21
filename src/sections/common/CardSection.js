@@ -1,15 +1,15 @@
 import React from 'react';
 import purchase from '../../utils/purchase';
 import imgMsc1 from "../../assets/image/slashcard1.png";
-import imgMsc2 from "../../assets/image/slashcard1.png";
+import imgMsc2 from "../../assets/image/slashcard2.png";
 
-const CardSection = ({ className, ...rest }) => {
+const CardSection = ({ className,productId,productId2, ...rest }) => {
     return (
         <div className={className} {...rest}>
-            <div className="container border-top pt-20 pb-12">
+            <div className="container border-top pt-20 pb-5">
                 <div className="row align-items-center">
                     {/* Hero Image */}
-                    <div className="col-xl-6 col-lg-6 col-md-7 col-xs-8">
+                    <div className="col-lg-6">
                         <div
                             className="mt-8 mt-lg-0"
                             data-aos="fade-left"
@@ -33,23 +33,23 @@ const CardSection = ({ className, ...rest }) => {
                     </div>
                     {/* End Hero Image */}
                     {/* Hero Content */}
-                    <div className="col-lg-6 col-md-9 col-sm-11 font-weight-500">
+                    <div className="col-lg-6 font-weight-500">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="pl-xl-10 text-center" data-aos="flip-right" data-aos-delay={900}>
-                                    <img className="w-100" width="200" src={imgMsc1} alt="image" />
-                                    <button onClick={() => purchase('prod_KctTzvwDN7RVpc')} className="btn mb-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
+                                <div className="text-center mb-xs-7 mb-0" data-aos="flip-right" data-aos-delay={900}>
+                                    <img className="mb-4" width="320" src={imgMsc1} alt="image" />
+                                    <button onClick={() => purchase(productId)} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
                                         $250 card for $125 <br />
                                         BUY NOW
                                     </button>
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="pl-xl-10 text-center" data-aos="flip-right" data-aos-delay={900}>
-                                    <img className="w-100" width="200" src={imgMsc2} alt="image" />
-                                    <button onClick={() => purchase('prod_KctTzvwDN7RVpc')} className="btn mb-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
-                                        $250 card for $125 <br />
-                                        BUY NOW
+                                <div className="text-center mb-xs-7  mb-0" data-aos="flip-right" data-aos-delay={900}>
+                                    <img className="mb-4" width="320" src={imgMsc2} alt="image" />
+                                    <button onClick={() => purchase(productId2)} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
+                                    $100 card for $50 <br/>
+BUY NOW
                                     </button>
                                 </div>
                             </div>
@@ -58,11 +58,6 @@ const CardSection = ({ className, ...rest }) => {
                     </div>
 
                     {/* End Hero Content */}
-                </div>
-                <div className="mt-15 text-center">
-                    <a href="#" target="_blank" className="btn btn-black btn-1 rounded-5">
-                        Visit website
-                    </a>
                 </div>
             </div>
         </div>

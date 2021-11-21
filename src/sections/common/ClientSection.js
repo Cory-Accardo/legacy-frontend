@@ -23,8 +23,8 @@ const ClientSection = ({ className, ...rest }) => {
                             data-aos-delay={500}
                         >
                             <div className="row">
-                                <div className="col-md-3 order-xl-1 order-lg-1 order-md-1 order-2">
-                                    <img src={businessImage} alt="business image" style={maxWidth} />
+                                <div className="col-md-3 order-xl-1 order-lg-1 order-md-1 order-2 text-xs-center">
+                                    <img src={businessImage} alt="business image" width="230" />
                                 </div>
                                 <div className="col-md-6 order-xl-2 order-lg-2 order-md-2 order-1">
                                     <div className="d-flex text-center flex-column align-items-center justify-content-center">
@@ -35,11 +35,11 @@ const ClientSection = ({ className, ...rest }) => {
                                         </h6>
                                     </div>
                                 </div>
-                                <div className="col-md-3 order-xl-3 order-lg-3 order-md-3 order-3">
-                                    <img src={messageImage} alt="message image" style={maxWidth} />
+                                <div className="col-md-3 order-xl-3 order-lg-3 order-md-3 order-3 text-xs-center">
+                                    <img src={messageImage} alt="message image"  width="230" />
                                 </div>
                             </div>
-                            <div className="d-flex flex-column align-items-center justify-content-center mt-5 text-center">
+                            <div className="d-flex flex-column align-items-center justify-content-center mt-7 text-center">
                                 <div className="mt-0 mb-4">
                                     <p className="font-size-6 font-weight-500 mb-0 text-black">
                                         Powered by
@@ -51,7 +51,7 @@ const ClientSection = ({ className, ...rest }) => {
                                 </div>
                                 <br/>
                                 <div className="mt-0 mb-4">
-                                    <p className="font-size-6 mb-0 font-weight-normal">
+                                    <p className="font-size-6 mb-0 font-weight-normal p-sm-br-none">
                                         Since its inception, VSEDC has delivered economic resources to communities that often live<br/>
                                         in the shadows. Because of systematic barriers that make it more difficult to secure business<br/> support, VSEDC plays an instrumental role in making entrepreneurial dreams a reality.
                                     </p>

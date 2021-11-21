@@ -1,8 +1,8 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/home1/Hero";
-import Categories from "../sections/home1/Categories";
+import Hero from "../sections/homepage/Hero";
+import Categories from "../sections/homepage/Categories";
 import SectionDetail from "../sections/homepage/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import CardSection from "../sections/homepage/CardSection";

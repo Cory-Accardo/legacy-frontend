@@ -21,7 +21,7 @@ const SectionDetail = ({ className, ...rest }) => {
                                     <span style={{ color: '#8dc63f' }}>Toss It Up</span> Salads & More
                                 </h2>
                                 <p className="font-size-7 mb-0">
-                                    Toss It Up’s philosophy is to encourage the community as a whole to modify their eating choices. Toss It Up’s goal is to provide fresh organic produce, clean quality eating, and to offer a wonderful experience at a reasonable cost.
+                                Toss It Up’s philosophy is to encourage the community as a whole to modify their<br/> eating choices. Toss It Up’s goal is to provide fresh organic produce, clean quality<br/> eating, and to offer a wonderful experience at a reasonable cost. 
                                 </p>
                             </div>
                         </div>

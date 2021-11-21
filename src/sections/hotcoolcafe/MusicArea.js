@@ -35,6 +35,7 @@ const MusicArea = ({ className, ...rest }) => {
                 we are now excited to have created our very own Brand of Coffee.
                 Check out our Crenshaw Coffee Co. blends & the Best Vegan Bar food in L.A.
               </p>
+              
             </div>
           </div>
         </div>

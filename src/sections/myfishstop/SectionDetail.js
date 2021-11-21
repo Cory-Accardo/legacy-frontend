@@ -20,8 +20,8 @@ const SectionDetail = ({ className, ...rest }) => {
                                 <h2 className="font-size-10 letter-spacing-n83 mb-6">
                                     <span style={{ color: '#F02D2C' }}>Mississipi Soul Fish</span> Approved.
                                 </h2>
-                                <p className="font-size-7 mb-0 text-black">
-                                    Established in 2016.<br/>
+                                <p className="font-size-7 mb-0">
+                                    Established in 2016.<br/><br/>
                                     Born in the heart of Mississippi, my mom Annie Brown taught me everything I know about cooking. So I'm proud to share with you her southern recipes for seafood and soulful sides.
                                 </p>
                             </div>
