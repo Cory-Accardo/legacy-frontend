@@ -1,6 +1,6 @@
 import React from "react";
-import PageWrapper from "../components/PageWrapper";
-import imageRight from "../assets/image/inner-page/jpg/comming-soon-img.png";
+import PageWrapper from "../../components/PageWrapper";
+import imageRight from "../../assets/image/inner-page/jpg/comming-soon-img.png";
 
 const Contact = () => {
   return (

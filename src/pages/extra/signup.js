@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import PageWrapper from "../components/PageWrapper";
+import PageWrapper from "../../components/PageWrapper";
 
 const SignUp = () => {
   return (

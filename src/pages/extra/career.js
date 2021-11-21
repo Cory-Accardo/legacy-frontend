@@ -1,10 +1,10 @@
 import React from "react";
 
-import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/career/Hero";
-import CTA from "../sections/career/CTA";
-import Features from "../sections/career/Features";
-import Jobs from "../sections/career/Jobs";
+import PageWrapper from "../../components/PageWrapper";
+import Hero from "../../sections/career/Hero";
+import CTA from "../../sections/career/CTA";
+import Features from "../../sections/career/Features";
+import Jobs from "../../sections/career/Jobs";
 
 const PricingPage = () => {
   return (
