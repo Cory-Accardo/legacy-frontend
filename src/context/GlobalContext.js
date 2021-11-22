@@ -14,8 +14,8 @@ export const themeConfigDefault = {
   headerButton: (
     <>
     <div className="d-flex align-items-center justify-content-end">
-      <Link href="/">
-        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" style={{ background: '#00793D', borderColor: '#00793D' }}>
+      <Link href="/#slashcard" >
+        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" target="_blank" style={{ background: '#00793D', borderColor: '#00793D' }}>
           $hop Love
         </a>
       </Link>

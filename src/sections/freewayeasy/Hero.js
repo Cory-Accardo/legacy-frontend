@@ -27,25 +27,9 @@ const Hero = ({ className, ...rest }) => {
                 to prepare the driver for a permit or licsence.
               </p>
               <div className="d-flex align-items-center py-6 mr-xl-15">
-                <div className="mr-7">
-                  <a
-                    href="/#"
-                    target="_blank"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // gContext.toggleVideoModal();
-                    }}
-                  >
-                    <img src={heroCtaBtnImage} alt="" />
+                 <a href="#" className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
+                   Sign-Up Now
                   </a>
-                </div>
-                <div className="mt-0">
-                  <p className="font-size-7 mb-0">Sign-Up to Get Promo Code</p>
-                  {/*<p className="font-size-6 mb-0">*/}
-                  {/*  You may book parties up to 8.*/}
-                  {/*  For larger parties, please call Tanya at 323-954-7477.*/}
-                  {/*</p>*/}
-                </div>
               </div>
               <div className="mt-6">
                 <div class="row align-items-center">

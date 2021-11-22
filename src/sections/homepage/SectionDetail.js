@@ -1,5 +1,6 @@
 import React from 'react';
 import sectionImage from '../../assets/image/homepage/png/section-image.png';
+import VSEDClogo2 from '../../assets/image/homepage/png/VSEDClogo2.png';
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -19,7 +20,11 @@ const SectionDetail = ({ className, ...rest }) => {
                                     data-aos="zoom-in"
                                     data-aos-duration={500}
                                 >
-                                    <img src={sectionImage} alt="shop love image" width="333" className="mb-6"/>
+                                    <div class="d-flex text-center justify-content-center mt-10 mb-13">
+                                    <a href="https://vsedc.org/" target="_blank"><img src={VSEDClogo2} alt="shop love image" height="150" className="mb-6 pr-10 border-right"/></a>
+                                    
+                                    <a href="/"><img src={sectionImage} alt="shop love image" height="150" className="mb-6 pl-10"/></a>
+                                    </div>
                                     <h5 className="font-size-10 mt-5 mb-5">Community Powered Economic Empowerment.</h5>
                                 
                                     <p className="font-size-7">

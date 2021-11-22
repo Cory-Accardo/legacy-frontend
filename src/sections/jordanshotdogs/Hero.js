@@ -3,6 +3,7 @@ import React from "react";
 import imageUrl from "../../assets/image/jordanshotdogs/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/jordanshotdogs/png/hero-cta-btn-image.png";
 import arrow from "../../assets/image/arrow.png";
+import Link from "next/link";
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -29,40 +30,24 @@ const Hero = ({ className, ...rest }) => {
                 the JDH Living Legend t-shirt & Our Diggity Dog
                 t-shirt, in honor of our history.
               </p>
-              <div className="d-flex align-items-center py-6 mr-xl-15">
-                <div className="mr-7">
-                  <a
-                    href="/#"
-                    target="_blank"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // gContext.toggleVideoModal();
-                    }}
-                  >
-                    <img src={heroCtaBtnImage} alt="" />
-                  </a>
-                </div>
-                <div className="mt-0">
-                  <p className="font-size-7 mb-0">Purchase the Harriet Special</p>
-                  {/*<p className="font-size-6 mb-0">*/}
-                  {/*  You may book parties up to 8.*/}
-                  {/*  For larger parties, please call Tanya at 323-954-7477.*/}
-                  {/*</p>*/}
-                </div>
-              </div>
-              <div className="mt-6">
+               <div className="mt-10">
                 <div class="row align-items-center">
+                  <div className="col-lg-5">
+                    <Link href="https://www.myfishstop.com/">
+                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
+                        Buy the Harriet
+                      </a>
+                    </Link>
+                  </div>
                   <div className="col-lg-7">
-                    <p className="font-size-5 mb-3"> Looking for more savings?</p>
+                    <p className="font-size-5 mb-3 "> Looking for more savings?</p>
                     <p className="font-size-5 mb-0">Scroll down to discover the SLASHcard</p>
                     <p className="font-size-5 mb-0">50% discount card, for a limited time.</p>
                     <div className="arrow-down">
                       <img src={arrow} alt="arrow" />
                     </div>
                   </div>
-                  <div className="col-lg-5">
 
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+ import world5 from "../../assets/image/myfishstop/png/world5.png";
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -28,6 +29,16 @@ const SectionDetail = ({ className, ...rest }) => {
                                         In an effort to revive the community’s rich history through the redevelopment of the hotel property,
                                         the Corteses were offered an opportunity to expand their southern cooking to a new neighborhood.
                                     </p>
+                                    <div className="">
+ <a style={{ color: '#000' }} href="https://www.deliciousatthedunbar.com/" className="d-flex align-items-center justify-content-center mt-3" target="_blank">
+                              
+                                    <img src={world5} className="mr-3" style={{ width: '14px', height: '14px' }} />
+                                     <p className="font-size-6 mb-0 font-weight-bold">
+                                        Delicious at the Dunbar
+                                    </p>
+                            
+                                </a>
+                            </div>
                                 </div>
                             </div>
                         </div>

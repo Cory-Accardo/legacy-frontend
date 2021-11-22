@@ -1,5 +1,7 @@
 import React from 'react';
 
+import world3 from "../../assets/image/myfishstop/png/world3.png";
+
 const SectionDetail = ({ className, ...rest }) => {
     return (
         <div className={className} {...rest}>
@@ -24,6 +26,17 @@ const SectionDetail = ({ className, ...rest }) => {
                                     Enjoy colour and design expertise that will help you create beautiful interiors
                                     and exteriors–and get insights on the best Benjamin Moore product for your specific project.
                                 </p>
+                                <div className="">
+ <a style={{ color: '#000' }} href="https://www.studiodcontract.com/" className="d-flex align-items-center justify-content-center mt-3" target="_blank">
+                              
+                                    <img src={world3} className="mr-3" style={{ width: '14px', height: '14px' }} />
+                                     <p className="font-size-6 mb-0 font-weight-bold">
+                                        <a style={{ color: '#000' }} href="https://www.studiodcontract.com/" target="_blank">StudioD</a>
+                                    </p>
+                            
+                               
+                                </a>
+                            </div>
                             </div>
                         </div>
                     </div>

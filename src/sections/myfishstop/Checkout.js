@@ -1,6 +1,7 @@
 import React from "react";
 
 import checkoutIcon from "../../assets/image/tossItUp/png/checkout-icon.png";
+import world from "../../assets/image/myfishstop/png/world.png";
 
 const Hero = ({ className, ...rest }) => {
     return (
@@ -11,8 +12,8 @@ const Hero = ({ className, ...rest }) => {
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div>
                             <div className="text-center">
-                                <p className="font-size-7 mb-0 text-white font-weight-bold">
-                                    Visit MyFishStop.com to Explore oue Catering + Menu Items. You buy it, We Fry It!
+                                <p className="font-size-7 mb-0 text-white d-flex justify-content-center align-items-center">
+                                    <a href="https://www.myfishstop.com/" target="_blank" className="text-white"><img src={world} width="20" className="mr-2"/> <span>Visit MyFishStop.com to Explore oue Catering + Menu Items. You buy it, We Fry It!</span></a>
                                 </p>
                             </div>
                         </div>

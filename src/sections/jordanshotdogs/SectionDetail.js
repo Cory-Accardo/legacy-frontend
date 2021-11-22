@@ -1,5 +1,6 @@
 import React from 'react';
 import checkoutImg from "../../assets/image/freewayeasy/png/checkout-icon-1.png";
+ import world4 from "../../assets/image/myfishstop/png/world4.png";
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -28,6 +29,17 @@ const SectionDetail = ({ className, ...rest }) => {
                                     Nowhere else will you find a restaurant serving authentic family recipes
                                     that are also affordable and accessible in our own community.
                                 </p>
+                                     <div className="">
+ <a style={{ color: '#000' }} href="https://www.instagram.com/jordanhotdogs/" className="d-flex align-items-center justify-content-center mt-3" target="_blank">
+                              
+                                    <img src={world4} className="mr-3" style={{ width: '14px', height: '14px' }} />
+                                     <p className="font-size-6 mb-0 font-weight-bold">
+                                        Jordan’s Hot Dogs
+                                    </p>
+                            
+                               
+                                </a>
+                            </div>
                             </div>
                         </div>
                     </div>

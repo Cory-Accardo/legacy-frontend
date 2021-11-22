@@ -22,29 +22,18 @@ const Hero = ({ className, ...rest }) => {
               <p className="font-size-7 ">
                 Here at Pips we specialize in two things. Great jazz and traditional American cuisine! Enjoy half off our bar menu from 5pm to 7pm Tuesday through Thursday.
               </p>
-              <div className="d-flex align-items-center py-6 mr-xl-15">
-                <div className="mr-7">
-                  <a
-                    href="/#"
-                    target="_blank"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // gContext.toggleVideoModal();
-                    }}
-                  >
-                    <img src={heroCtaBtnImage} alt="" />
-                  </a>
-                </div>
-                <div className="mt-2">
-                  <p className="font-size-8 mb-3">Reservations at Pip's on La Brea</p>
-                  <p className="font-size-6 mb-0">
-                    You may book parties up to 8.
-                    For larger parties, please call Tanya at 323-954-7477.
-                  </p>
-                </div>
-              </div>
-              <div className="mt-6">
+                
+                    
+                    
+              <div className="mt-10">
                 <div class="row align-items-center">
+                  <div className="col-lg-5">
+               
+                      <a href="#" className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
+                      Reservations at PIPS
+                      </a>
+                
+                  </div>
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>
                     <p className="font-size-5 mb-0">Scroll down to discover the SLASHcard</p>
@@ -53,9 +42,7 @@ const Hero = ({ className, ...rest }) => {
                       <img src={arrow} alt="arrow" />
                     </div>
                   </div>
-                  <div className="col-lg-5">
 
-                  </div>
                 </div>
               </div>
             </div>

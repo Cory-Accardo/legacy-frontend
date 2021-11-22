@@ -28,8 +28,8 @@ const Footer = ({ className, ...rest }) => {
                     <b className="font-weight-bold">ShopLove</b> Cohort:
                   </p>
                   <p className="font-size-5 mb-0 mt-8 mt-lg-10">
-                  <Link href="https://vsedc.org/start-here/">
-                    <a target="_blank">
+                  <Link href="/">
+                    <a>
                     <img src={BrandLogo} alt="brand-logo" width="140" />
                     </a>
                   </Link>
@@ -44,10 +44,10 @@ const Footer = ({ className, ...rest }) => {
                   <div className="col-sm-6 col-xs-6">
                     <div className="brand-logo mb-10 mb-lg-0 dark-mode-texts pr-lg-10 pr-xl-0 pt-lg-3">
                       <p className="mb-0">
-                        <img src={MislaLogo} alt="brand-logo" />
+                        <a href="https://misla.org/" target="_blank"><img src={MislaLogo} alt="brand-logo" /></a>
                       </p>
                       <p className="font-size-5 font-weight-light text-white mt-8 mt-lg-10">
-                        MISLA, Made In South LA, provides technology, creative and financial literacy bootcamps on an ongoing basis to South LA youth and adults.
+                      Made In South LA is a non-profit that trains South LA youth + community in Software Engineering & Digital Marketing. MISLA graduates were hired by MARTY Creative Agency to create and implement the Shop Love website & Marketing Campaign.
                       </p>
                     </div>
                   </div>
@@ -55,8 +55,8 @@ const Footer = ({ className, ...rest }) => {
                   {/* Single Widgets */}
                   <div className="col-sm-6 col-xs-6">
                     <div className="brand-logo mb-10 mb-lg-0 dark-mode-texts pr-lg-10 pr-xl-0 pt-lg-3">
-                      <p className="font-size-5 mt-8 mt-lg-10">
-                        Support MISLA’s Mission:
+                      <p className="font-size-5 text-white mt-8 mt-lg-10">
+                      Every dollar donated goes toward Training Bootcamps free to the community.
                       </p>
                       <div className="d-flex justify-content-between align-items-center">
                         <a href="https://venmo.com/u/Misla" target="_blank"><img src={QRLogo1} alt="QR Code 1" width="100" /></a>
@@ -70,18 +70,14 @@ const Footer = ({ className, ...rest }) => {
             </div>
           </div>
           <div className="row border-top border-default-color dark-mode-texts d-flex pt-11 align-items-center">
-            <div className="col-md-6">
-              <div className="d-flex align-items-center">
-                <p className="font-size-5 mr-5 font-weight-normal text-white">
-                  Designed & Developed by:
+            <div className="col-md-12">
+              <div className="text-center">
+                <p className="font-size-5 font-weight-normal text-white">
+                This Website was created by: A Youth Brand Creative Agency
                 </p>
                 <a href="https://marty.world/" target="_blank"><img src={MartyLogo} alt="marty logo" width="160" /></a>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="d-flex justify-content-end align-items-end">
-                <p className="font-size-5 font-weight-normal text-white">
-                  @ 2021 Copyright.
+                             <p className="font-size-5 mt-3 font-weight-normal text-white">
+     @ 2021 Copyright.
                 </p>
               </div>
             </div>

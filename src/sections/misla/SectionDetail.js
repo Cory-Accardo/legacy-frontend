@@ -1,4 +1,5 @@
 import React from 'react';
+ import world3 from "../../assets/image/myfishstop/png/world3.png";
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -27,6 +28,16 @@ const SectionDetail = ({ className, ...rest }) => {
                                         tech industry is our overarching intention and we have been able to pair several of our past participants with
                                         roles within tech, evidence of the employable curriculum style in which we utilize.
                                     </p>
+                                        <div className="">
+ <a style={{ color: '#000' }} href="https://misla.org/" className="d-flex align-items-center justify-content-center mt-3" target="_blank">
+                              
+                                    <img src={world3} className="mr-3" style={{ width: '14px', height: '14px' }} />
+                                     <p className="font-size-6 mb-0 font-weight-bold">
+                                        Visit MISLA
+                                    </p>
+                            
+                                </a>
+                            </div>
                                 </div>
                             </div>
                         </div>

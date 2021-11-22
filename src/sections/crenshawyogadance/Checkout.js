@@ -1,6 +1,7 @@
 import React from "react";
 
 import checkoutIcon from "../../assets/image/tossItUp/png/checkout-icon.png";
+import world2 from "../../assets/image/myfishstop/png/world2.png";
 
 const Hero = ({ className, ...rest }) => {
     return (
@@ -15,9 +16,10 @@ const Hero = ({ className, ...rest }) => {
                         >
                             <div className="d-flex align-items-center justify-content-center">
                                 <div className="mt-0">
-                                    <p className="font-size-7 mb-0 text-black font-weight-bold">
-                                        Discover our additional Classes & Programs
-                                    </p>
+                                <p className="font-size-7 mb-0 text-black d-flex justify-content-center align-items-center">
+                                    <a href="https://crenshawyogaanddance.com/" target="_blank" className="text-black"><img src={world2} width="20" className="mr-2"/> <span> Discover our additional Classes & Programs</span></a>
+                                </p>
+                                   
                                 </div>
                             </div>
                         </div>

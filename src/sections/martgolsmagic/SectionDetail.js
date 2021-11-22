@@ -33,7 +33,7 @@ const SectionDetail = ({ className, ...rest }) => {
                                 </div>
                                 <div className="mt-0">
                                     <p className="font-size-6 mb-0 font-weight-bold">
-                                        <a style={{ color: '#000' }} href="https://martgolsmagic.com" target="_blank">Martgol’s Magic Inc.</a>
+                                        <a style={{ color: '#000' }} href="https://www.facebook.com/Martgols-magic-car-care-258348244583910" target="_blank">Martgol’s Magic Inc.</a>
                                     </p>
                                 </div>
                             </div>

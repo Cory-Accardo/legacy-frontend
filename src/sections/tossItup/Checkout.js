@@ -1,6 +1,7 @@
 import React from "react";
 
 import checkoutIcon from "../../assets/image/tossItUp/png/checkout-icon.png";
+import world from "../../assets/image/myfishstop/png/world.png";
 
 const Hero = ({ className, ...rest }) => {
     return (
@@ -9,13 +10,9 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                     {/* Hero Content */}
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <div>
-
-                            <p className="font-size-6 mb-0 text-white">
-                                Check out our New Online ordering platform! Ordering is easier than ever!
-                            </p>
-
-                        </div>
+                         <p className="font-size-7 mb-0 text-white d-flex justify-content-center align-items-center">
+                                    <a href="https://www.facebook.com/Tossitupinc" target="_blank" className="text-white"><img src={world} width="20" className="mr-2"/> <span>Check out our New Online ordering platform! Ordering is easier than ever!</span></a>
+                                </p>
                     </div>
                     {/* End Hero Content */}
                 </div>

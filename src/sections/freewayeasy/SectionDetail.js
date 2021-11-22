@@ -1,5 +1,6 @@
 import React from 'react';
 import checkoutImg from "../../assets/image/freewayeasy/png/checkout-icon-1.png";
+ import world3 from "../../assets/image/myfishstop/png/world6.png";
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -27,6 +28,16 @@ const SectionDetail = ({ className, ...rest }) => {
                                     TRAFFIC SCHOOL- Our traffic school allows you to keep the points off of your record and your insurance rates low.
                                     DRIVER'S EDUCATION - The driver education classes are great for teenagers who need a permit from the DMV.
                                 </p>
+                                  <div className="">
+ <a style={{ color: '#000' }} href="https://freewayeasy.com/" className="d-flex align-items-center justify-content-center mt-3" target="_blank">
+                              
+                                    <img src={world3} className="mr-3" style={{ width: '14px', height: '14px' }} />
+                                     <p className="font-size-6 mb-0 font-weight-bold">
+                                        Freeway Easy 
+                                    </p>
+                            
+                                </a>
+                            </div>
                             </div>
                         </div>
                     </div>

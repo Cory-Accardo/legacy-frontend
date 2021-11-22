@@ -104,6 +104,7 @@ const Categories = ({ className, ...rest }) => {
     centerPadding: "28%",
     centerMode: true,
     slidesToShow: 3,
+    // slidesToScroll: 3,
     arrows: false,
     className: "single-slide",
 
@@ -304,9 +305,9 @@ const Categories = ({ className, ...rest }) => {
                   tabIndex="-1"
                 >
                   <div className="bg-cat shadow-2 min-w-255 min-h-222 gr-hover-1 text-center">
-                    <div className="mb-8 mt-8">
+                    
                       <img src={image} alt="Landing image" className="max-w-193" />
-                    </div>
+                    
                     <h4 className="font-size-6 p-2 font-weight-medium text-white text-center w-100 mb-0" style={{ padding: '15px 0px !important', background: `${primaryColor}`, marginBottom: '0 !important' }}>
                       {title}
                     </h4>

@@ -38,8 +38,8 @@ const Hero = ({ className, ...rest }) => {
               <div className="mt-10">
                 <div class="row align-items-center">
                   <div className="col-lg-5">
-                    <Link href="/#">
-                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: 'linear-gradient(180deg, #CCB341 0%, #A6762E 41.67%, #C2A23C 68.23%, #F9E087 90.62%, #C4A63E 100%)', borderColor: '#F6A682' }}>
+                    <Link href="https://www.myfishstop.com/">
+                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
                         Place Your Order Today
                       </a>
                     </Link>
