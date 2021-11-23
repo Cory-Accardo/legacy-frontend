@@ -3,7 +3,7 @@ import React from "react";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/rideon/Hero";
 import SectionDetail from "../sections/rideon/SectionDetail";
-import CardSection from "../sections/common/CardSection";
+import CardSection from "../sections/rideon/CardSection";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/rideon/png/logo-main.png';
 
@@ -26,7 +26,7 @@ const RideOn = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='prod_Kd3dcyFAk1diA9' productId2='prod_Kd4BGLa6W3VIOJ' className="bg-transparent pt-12 pb-12" />
+                <CardSection productId='prod_Kd48LcqaYhPqWi' productId2='prod_Kd4BGLa6W3VIOJ' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>
