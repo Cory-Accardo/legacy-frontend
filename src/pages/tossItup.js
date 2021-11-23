@@ -1,12 +1,12 @@
 import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
-import Hero from "../sections/tossitup/Hero";
+import Hero from "./tossitup/Hero";
 // import Checkout from "../sections/tossItup/Checkout";
-import SectionDetail from "../sections/tossitup/SectionDetail";
+import SectionDetail from "./tossitup/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/tossitup/png/logo-main.png';
-import CardSection from "../sections/tossitup/CardSection";
+import CardSection from "./tossitup/CardSection";
 
 const TossItUp = () => {
     return (
