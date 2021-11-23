@@ -5,7 +5,7 @@ import Hero from "../sections/freewayeasy/Hero";
 import SectionDetail from "../sections/freewayeasy/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/freewayeasy/png/logo-main.png';
-import CardSection from "../sections/freewayeasy/CardSection";
+import CardSection from "../sections/common/CardSection";
 
 const FreewayEasy = () => {
     return (
@@ -26,7 +26,7 @@ const FreewayEasy = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='prod_Ke3Wi7vO2fDXEo' productId2='prod_Ke3hJVlAYwpL2Z' className="bg-transparent pt-12 pb-12" />
+                <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

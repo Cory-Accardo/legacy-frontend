@@ -22,11 +22,11 @@ const ClientSection = ({ className, ...rest }) => {
                             data-aos="fade-right"
                             data-aos-delay={500}
                         >
-                            <div className="row text-center">
-                                <div className="col-md-3 order-xl-1 order-lg-1 order-md-1 order-2 text-xs-center text-center">
+                            <div className="row">
+                                <div className="col-md-3 order-xl-1 order-lg-1 order-md-1 order-2 text-xs-center">
                                     <img src={businessImage} alt="business image" width="230" />
                                 </div>
-                                <div className="col-md-6 order-xl-2 order-lg-2 order-md-2 order-1 text-center">
+                                <div className="col-md-6 order-xl-2 order-lg-2 order-md-2 order-1">
                                     <div className="d-flex text-center flex-column align-items-center justify-content-center">
                                         <img src={shopLove} alt="shop love" style={{...maxWidth, maxWidth: '100px'}} />
                                         <br/>
@@ -35,7 +35,7 @@ const ClientSection = ({ className, ...rest }) => {
                                         </h6>
                                     </div>
                                 </div>
-                                <div className="col-md-3 order-xl-3 order-lg-3 order-md-3 order-3 text-xs-center text-center">
+                                <div className="col-md-3 order-xl-3 order-lg-3 order-md-3 order-3 text-xs-center">
                                     <img src={messageImage} alt="message image"  width="230" />
                                 </div>
                             </div>

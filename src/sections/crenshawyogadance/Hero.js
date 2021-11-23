@@ -35,7 +35,7 @@ const Hero = ({ className, ...rest }) => {
                 Get 50% OFF the Crenshaw Yoga & Dance Annual Membership. Limited time only. $900 regular price.
               </p>
               <div className="mt-10">
-                <div className="row align-items-center">
+                <div class="row align-items-center">
                   <div className="col-lg-5">
                     <Link href="/#">
                       <a className="btn btn-dark-green btn-1 rounded-5 text-white" target="_blank" style={{ background: '#F6A682', borderColor: '#F6A682' }}>
