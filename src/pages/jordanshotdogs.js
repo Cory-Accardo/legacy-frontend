@@ -5,7 +5,7 @@ import Hero from "../sections/jordanshotdogs/Hero";
 import SectionDetail from "../sections/jordanshotdogs/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/jordanshotdogs/png/logo-main.png';
-import CardSection from "../sections/common/CardSection";
+import CardSection from "../sections/jordanshotdogs/CardSection";
 
 const JordansHotDogs = () => {
     return (

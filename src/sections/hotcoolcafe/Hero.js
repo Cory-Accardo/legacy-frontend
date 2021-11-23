@@ -37,7 +37,7 @@ const Hero = ({ className, ...rest }) => {
                 Get your $55 Warm Winter Kozy Kit today!
               </p>
               <div className="mt-10">
-                <div class="row align-items-center">
+                <div className="row align-items-center">
                   <div className="col-lg-5">
                     <button onClick={() => purchase('prod_KbV4Z107OYcnDv')} target="_blank" className="btn btn-dark-green btn-1 mb-8 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
                       Order Now

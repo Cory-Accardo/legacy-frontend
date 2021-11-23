@@ -23,7 +23,7 @@ const Hero = ({ className, ...rest }) => {
               Buy Martgol’s Magic
                       </a>
               <div className="mt-8">
-                <div class="row align-items-center">
+                <div className="row align-items-center">
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>
                     <p className="font-size-5 mb-0">Scroll down to discover the SLASHcard</p>
