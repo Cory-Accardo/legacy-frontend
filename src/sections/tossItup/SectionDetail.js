@@ -18,11 +18,10 @@ const SectionDetail = ({ className, ...rest }) => {
                                 data-aos-duration={500}
                             >
                                 <h2 className="font-size-10 letter-spacing-n83 mb-6">
-                                    <span style={{ color: '#F02D2C' }}>Mississipi Soul Fish</span> Approved.
+                                    <span style={{ color: '#8dc63f' }}>Toss It Up</span> Salads & More
                                 </h2>
                                 <p className="font-size-7 mb-0">
-                                    Established in 2016.<br/><br/>
-                                    Born in the heart of Mississippi, my mom Annie Brown taught me everything I know about cooking. So I'm proud to share with you her southern recipes for seafood and soulful sides.
+                                Toss It Up’s philosophy is to encourage the community as a whole to modify their<br/> eating choices. Toss It Up’s goal is to provide fresh organic produce, clean quality<br/> eating, and to offer a wonderful experience at a reasonable cost. 
                                 </p>
                             </div>
                         </div>

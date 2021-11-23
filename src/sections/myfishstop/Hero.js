@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/myfishstop/png/hero-image.png";
-import purchase from '../../utils/purchase';
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -37,11 +36,13 @@ const Hero = ({ className, ...rest }) => {
               <p className="font-size-7">
                 Lobster Mac, My Candied Yams, Collard Greens, My Fries and more!</p>
               <div className="mt-10">
-                <div className="row align-items-center">
+                <div class="row align-items-center">
                   <div className="col-lg-5">
-                      <button onClick={() => purchase('prod_Kds6PuIfkmGDsg')} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
+                    <Link href="https://www.myfishstop.com/">
+                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
                         Place Your Order Today
-                      </button>
+                      </a>
+                    </Link>
                   </div>
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>

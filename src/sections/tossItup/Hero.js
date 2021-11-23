@@ -1,45 +1,45 @@
 import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
-import imgM from "../../assets/image/studiodcontractfinishes/png/hero-image.png";
+import imgM from "../../assets/image/tossItUp/png/hero-image-1.png";
 
 const Hero = ({ className, ...rest }) => {
   return (
     <div className={className} {...rest}>
-      <div className="container">
+      <div className="container position-static">
         <div className="row align-items-center justify-content-center position-static">
           {/* Hero Image */}
-          <div className="col-md-6">
+          <div className="col-xl-6 col-lg-6 col-md-7 col-xs-8">
             <div className="pt-lg-3" data-aos="flip-right" data-aos-delay={900}>
               <img className="w-100" src={imgM} alt="" />
             </div>
           </div>
           {/* End Hero Image */}
           {/* Hero Content */}
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-9 col-sm-11">
             <div
-              className="mt-5"
+              className=""
               data-aos="fade-left"
               data-aos-delay={750}
             >
-              <h1 className="font-size-13 mb-8 pr-sm-18 pr-md-8 pr-lg-0 line-height-84">
-                <span style={{ color: '#e16b2b' }}>$200 Discount on</span> <span style={{ color: '#ef1d24' }}>Color Consultation.</span>
+              <h1 className="font-size-13 mb-8">
+                The <span style={{ color: '#8dc63f' }}>Toss It Up</span><br /> <span style={{ color: '#39B54A' }}>Coupon</span> <span style={{ color: '#d6df20' }}>Code</span>
               </h1>
-              <p className="font-size-7 mb-0 pr-sm-10 pr-md-10 pr-lg-0 pr-xl-18">
-                We’re thrilled to announce that our in-home colour
-                consultancy service has resumed for customers
-                in the Greater Los Angeles area.<br />
-                Inquire now to get your next project off to a great start
-                with the help of our colour experts at a $200 discount
-                for a limited time.
+              <p className="font-size-7">
+                The Classics are our Toss It Up O.G. salads. Tried and True, here is where you find the BEST, and ONLY $5 salads in Los Angeles!
+              </p>
+              <p className="font-size-7">
+                Our Premium Salads are PACKED with extras that make them the best of the best!
+              </p>
+              <p className="font-size-7">
+                Receive a coupon code when you spend $40 or more!
               </p>
               <div className="mt-10">
                 <div class="row align-items-center">
-
                   <div className="col-lg-5">
                     <Link href="/#">
-                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
-                        Book Your Consultation
+                      <a className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
+                        Place Your Order
                       </a>
                     </Link>
                   </div>
@@ -51,6 +51,7 @@ const Hero = ({ className, ...rest }) => {
                       <img src={arrow} alt="arrow" />
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
