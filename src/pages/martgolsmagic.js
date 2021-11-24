@@ -3,7 +3,7 @@ import React from "react";
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/martgolsmagic/Hero";
 import SectionDetail from "../sections/martgolsmagic/SectionDetail";
-import CardSection from "../sections/common/CardSection";
+import CardSection from "../sections/martgolsmagic/CardSection";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/martgolsmagic/png/logo-main.png';
 

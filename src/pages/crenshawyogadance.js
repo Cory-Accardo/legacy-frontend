@@ -6,7 +6,7 @@ import Checkout from "../sections/crenshawyogadance/Checkout";
 import SectionDetail from "../sections/crenshawyogadance/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/crenshawyogadance/png/brand-logo.png';
-import CardSection from "../sections/common/CardSection";
+import CardSection from "../sections/crenshawyogadance/CardSection";
 
 const CrenshawYogaDance = () => {
     return (
@@ -28,7 +28,7 @@ const CrenshawYogaDance = () => {
             >
                                 <Hero className="pt-30 pb-12" />
                 <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
-                <Checkout className="pt-12 pb-12" style={{ backgroundColor: '#fdbf4a' }} />
+                {/*<Checkout className="pt-12 pb-12" style={{ backgroundColor: '#fdbf4a' }} />*/}
                 <SectionDetail className="bg-default-5 pt-13 pb-12" style={{ backgroundColor: '#F8F8F9' }} />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>
