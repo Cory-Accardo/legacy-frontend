@@ -3,7 +3,7 @@ import purchase from '../../utils/purchase';
 import imgMsc1 from "../../assets/image/slashcard1.png";
 import imgMsc2 from "../../assets/image/slashcard2.png";
 
-const CardSection = ({ className,productId,productId2, ...rest }) => {
+const CardSection = ({ className,productId,productId2, businessName, ...rest }) => {
     return (
         <div className={className} {...rest}>
             <div className="container border-top pt-20 pb-5">
@@ -19,7 +19,7 @@ const CardSection = ({ className,productId,productId2, ...rest }) => {
                                 The ShopLove SLASHcard.
                             </h1>
                             <p className="font-size-7 text-black">
-                                Can’t decide what to purchase from Hot & Cool Cafe?
+                                Can’t decide what to purchase from {businessName}?
                             </p>
                             <p className="font-size-7 text-black">
                                 Purchase the ShopLove SLASH card today.

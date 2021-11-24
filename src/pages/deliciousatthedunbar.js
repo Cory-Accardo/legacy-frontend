@@ -26,7 +26,7 @@ const DeliciousAtTheDunbar = () => {
                 }}
             >
                 <Hero className="pt-30 pb-10" />
-                <CardSection productId='prod_KdpuyyYQLymj3f' productId2='prod_KdpSod9zaDpq35' className="bg-transparent pt-12 pb-12" />
+                <CardSection businessName='Delicious at the dunbar' productId='prod_KdpuyyYQLymj3f' productId2='prod_KdpSod9zaDpq35' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-13 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

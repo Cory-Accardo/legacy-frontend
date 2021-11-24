@@ -26,7 +26,7 @@ const JordansHotDogs = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='prod_KcvO7y1ahMW791' productId2='prod_KcvVBwVIPyZPAC' className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
+                <CardSection businessName="Jordan's hotdogs" productId='prod_KcvO7y1ahMW791' productId2='prod_KcvVBwVIPyZPAC' className="bg-transparent pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
                 <SectionDetail className="bg-default-5 pt-13 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

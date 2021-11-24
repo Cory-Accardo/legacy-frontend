@@ -26,7 +26,7 @@ const MartgolsMagic = () => {
                 }}
             >
                 <Hero className="pt-33 pb-12" />
-                <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
+                <CardSection businessName='Martols magic' productId='' productId2='' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>
