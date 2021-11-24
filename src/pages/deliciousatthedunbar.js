@@ -4,7 +4,7 @@ import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/deliciousatdunbar/Hero";
 import SectionDetail from "../sections/deliciousatdunbar/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
-import CardSection from "../sections/deliciousatdunbar/CardSection";
+import CardSection from "../sections/common/CardSection";
 import BrandLogo from '../assets/image/deliciousatdunbar/png/logo-main.png';
 
 const DeliciousAtTheDunbar = () => {
@@ -26,7 +26,7 @@ const DeliciousAtTheDunbar = () => {
                 }}
             >
                 <Hero className="pt-30 pb-10" />
-                <CardSection productId='prod_KdpuyyYQLymj3f' productId2='prod_KdpSod9zaDpq35' className="bg-transparent pt-12 pb-12" />
+                <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-13 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

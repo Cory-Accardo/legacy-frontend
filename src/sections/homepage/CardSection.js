@@ -9,7 +9,7 @@ const CardSection = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                     {/* Hero Image */}
                     <div className="col-lg-6">
-                        <div className="pt-lg-3" data-aos="flip-right" data-aos-delay={900}>
+                        <div className="pt-lg-3 mb-sm-5" data-aos="flip-right" data-aos-delay={900}>
                             <img className="w-100" src={imgM} alt="image" />
                         </div>
                     </div>

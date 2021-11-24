@@ -1,7 +1,7 @@
 import React from 'react';
-import purchase from '../../utils/purchase';
 import imgMsc1 from "../../assets/image/slashcard1.png";
 import imgMsc2 from "../../assets/image/slashcard2.png";
+import purchase from '../../utils/purchase';
 
 const CardSection = ({ className,productId,productId2, ...rest }) => {
     return (
