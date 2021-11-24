@@ -4,8 +4,6 @@ import imageUrl from "../../assets/image/jordanshotdogs/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/jordanshotdogs/png/hero-cta-btn-image.png";
 import arrow from "../../assets/image/arrow.png";
 import Link from "next/link";
-import purchase from '../../utils/purchase'
-
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -33,13 +31,13 @@ const Hero = ({ className, ...rest }) => {
                 t-shirt, in honor of our history.
               </p>
                <div className="mt-10">
-                <div className="row align-items-center">
+                <div class="row align-items-center">
                   <div className="col-lg-5">
-                   
-                      <button onClick={() => purchase('prod_KcwNM68UeHOaLZ')} className="btn btn-dark-green btn-3 rounded-5 text-white" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
+                    <Link href="https://www.myfishstop.com/">
+                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
                         Buy the Harriet
-                      </button>
-
+                      </a>
+                    </Link>
                   </div>
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>
@@ -58,7 +56,7 @@ const Hero = ({ className, ...rest }) => {
           {/* Hero Image */}
           <div className="col-md-5">
             <div className="pt-lg-3" data-aos="flip-right" data-aos-delay={900}>
-              <img className="w-100" src={imageUrl} alt="img" />
+              <img className="w-100" src={imageUrl} alt="" />
             </div>
           </div>
           {/* End Hero Image */}

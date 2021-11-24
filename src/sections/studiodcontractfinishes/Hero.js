@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/studiodcontractfinishes/png/hero-image.png";
-import purchase from '../../utils/purchase';
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -35,14 +34,14 @@ const Hero = ({ className, ...rest }) => {
                 for a limited time.
               </p>
               <div className="mt-10">
-                <div className="row align-items-center">
+                <div class="row align-items-center">
 
                   <div className="col-lg-5">
-
-                    <button onClick={() => purchase('prod_Kdy1tQ82a0V2fR')} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
-                      Book Your Consultation
-                    </button>
-
+                    <Link href="/#">
+                      <a className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
+                        Book Your Consultation
+                      </a>
+                    </Link>
                   </div>
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>

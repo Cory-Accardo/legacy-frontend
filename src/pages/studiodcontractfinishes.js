@@ -5,7 +5,7 @@ import Hero from "../sections/studiodcontractfinishes/Hero";
 import SectionDetail from "../sections/studiodcontractfinishes/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/studiodcontractfinishes/png/logo-main.png';
-import CardSection from "../sections/studiodcontractfinishes/CardSection";
+import CardSection from "../sections/common/CardSection";
 
 const StudiodContractFinishes = () => {
     return (
@@ -26,7 +26,7 @@ const StudiodContractFinishes = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='prod_Ke6fLSqAYCL8LF' productId2='prod_Ke6fLSqAYCL8LF' className="bg-transparent pt-12 pb-12" />
+                <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-13 pb-12" style={{ backgroundColor: '#F8F8F9' }} />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

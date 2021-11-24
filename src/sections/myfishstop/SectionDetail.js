@@ -1,5 +1,4 @@
 import React from 'react';
-import checkoutImg from "../../assets/image/myfishstop/png/checkout-icon-1.png";
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -25,16 +24,6 @@ const SectionDetail = ({ className, ...rest }) => {
                                     Established in 2016.<br/><br/>
                                     Born in the heart of Mississippi, my mom Annie Brown taught me everything I know about cooking. So I'm proud to share with you her southern recipes for seafood and soulful sides.
                                 </p>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-center mr-xl-15">
-                                <div className="mr-3">
-                                    <img src={checkoutImg} alt="" style={{ width: '14px', height: '14px' }} />
-                                </div>
-                                <div className="mt-0">
-                                    <p className="font-size-6 mb-0 font-weight-bold">
-                                        <a style={{ color: '#000' }} href="https://www.myfishstop.com/" target="_blank">MyFishStop</a>
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
