@@ -50,12 +50,6 @@ const items = [
     primaryColor: '#000000'
   },
   {
-    title: "Crenshaw Yoga & Dance",
-    link: "crenshawyogadance",
-    image: creshawYogaDance,
-    primaryColor: '#9D882F'
-  },
-  {
     title: "Ride On! Bike Shop",
     link: "rideon",
     image: rideOnBike,
@@ -100,7 +94,7 @@ const Categories = ({ className, ...rest }) => {
     dots: false,
     autoplay: true,
     infinite: true,
-    speed: 500,
+    speed: 300,
     centerPadding: "28%",
     centerMode: true,
     slidesToShow: 3,
