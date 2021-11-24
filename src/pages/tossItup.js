@@ -27,8 +27,8 @@ const TossItUp = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
-                <Checkout className=" pt-12 pb-12" style={{ backgroundColor: '#39B54A' }} />
+                <CardSection productId='prod_KeCTriiehGM405' productId2='prod_KeCMsOvZ5C36Hk' className="bg-transparent pt-12 pb-12" />
+                {/*<Checkout className=" pt-12 pb-12" style={{ backgroundColor: '#39B54A' }} />*/}               
                 <SectionDetail className="bg-default-5 pt-13 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

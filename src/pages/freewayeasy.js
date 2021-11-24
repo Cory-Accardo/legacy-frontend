@@ -26,7 +26,7 @@ const FreewayEasy = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='' productId2='' className="bg-transparent pt-12 pb-12" />
+                <CardSection productId='prod_Ke3Wi7vO2fDXEo' productId2='prod_Ke3hJVlAYwpL2Z' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

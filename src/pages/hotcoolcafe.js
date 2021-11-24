@@ -27,8 +27,7 @@ const HotCoolCafe = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection productId='prod_KctTzvwDN7RVpc' productId2='prod_KcuPPyG5tMjg6O' className="bg-transparent pt-12 pb-12" />
-                <Checkout className="bg-black pt-4 pt-md-14 pt-lg-12 pb-4 pb-md-14 pb-lg-12" />
+                <CardSection productId='prod_KbV4Z107OYcnDv' productId2='prod_KcuPPyG5tMjg6O' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>
