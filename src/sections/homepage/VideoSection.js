@@ -14,17 +14,19 @@ import backgroundImage from "../../assets/image/homepage/png/hero-image.png";
 const Video = ({ className, embedId, ...rest }) => {
   return (
     <div className={className} {...rest}>
-      <div className="container">
+      <div className="container-fluid mt-19">
+        <div className="pl-12 pr-12">
         <div className="video-responsive">
           <iframe
             width="100%"
-            height="600"
+              height="670"
             src={`https://www.youtube.com/embed/${embedId}?autoplay=1&mute=1`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="ShopLove"
           />
+        </div>
         </div>
       </div>
     </div>

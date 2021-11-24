@@ -12,9 +12,8 @@ const IndexPage = () => {
   return (
     <>
       <PageWrapper>
-        <Hero className="position-relative z-index-1" />
+        <YoutubeEmbed embedId="0tVNyJPTOas" />
         <SectionDetail className=" pt-12 pb-14" />
-        <YoutubeEmbed embedId="0tVNyJPTOas" className="pb-24 pt-6" />
         <Categories className="bg-default-home pt-20 pb-22 position-relative" />
         <CardSection className="bg-transparent pt-12 pb-12" />
         <ClientSection className="bg-transparent pt-lg-12 pb-14" />
