@@ -3,6 +3,7 @@ import React from "react";
 import imageUrl from "../../assets/image/freewayeasy/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/freewayeasy/png/hero-cta-btn-image.png";
 import arrow from "../../assets/image/arrow.png";
+import purchase from '../../utils/purchase';
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -27,12 +28,12 @@ const Hero = ({ className, ...rest }) => {
                 to prepare the driver for a permit or licsence.
               </p>
               <div className="d-flex align-items-center py-6 mr-xl-15">
-                 <a href="#" className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
-                   Sign-Up Now
-                  </a>
+                <button onClick={() => purchase('prod_Ke14nMwBW69Cv3')} className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
+                  Sign-Up Now
+                </button>
               </div>
               <div className="mt-6">
-                <div class="row align-items-center">
+                <div className="row align-items-center">
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>
                     <p className="font-size-5 mb-0">Scroll down to discover the SLASHcard</p>

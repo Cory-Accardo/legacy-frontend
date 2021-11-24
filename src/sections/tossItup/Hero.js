@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/tossItUp/png/hero-image-1.png";
+import purchase from '../../utils/purchase';
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -35,13 +36,11 @@ const Hero = ({ className, ...rest }) => {
                 Receive a coupon code when you spend $40 or more!
               </p>
               <div className="mt-10">
-                <div class="row align-items-center">
+                <div className="row align-items-center">
                   <div className="col-lg-5">
-                    <Link href="/#">
-                      <a className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
-                        Place Your Order
-                      </a>
-                    </Link>
+                    <button onClick={() => purchase('prod_KeCBzXX5Inb3Qs')} className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
+                      Place Your Order
+                    </button>
                   </div>
                   <div className="col-lg-7">
                     <p className="font-size-5 mb-3 "> Looking for more savings?</p>

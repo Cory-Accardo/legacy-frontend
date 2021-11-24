@@ -1,4 +1,5 @@
 import React from 'react';
+import checkoutImg from "../../assets/image/crenshawyogadance/png/checkout-icon-1.png";
 
 const SectionDetail = ({ className, ...rest }) => {
     return (
@@ -23,6 +24,16 @@ const SectionDetail = ({ className, ...rest }) => {
                                 <p className="font-size-7 mb-0">
                                     Crenshaw Yoga & Dance believes in healthy living, re-discovering joy, and living in the present. We provide yoga, dance and health education classes at an affordable price that will encourage our community to learn, maintain, and value a healthy lifestyle. We also offer our spaces for rent for filming, events, and more.
                                 </p>
+                            </div>
+                            <div className="d-flex align-items-center justify-content-center mr-xl-15">
+                                <div className="mr-3">
+                                    <img src={checkoutImg} alt="" style={{ width: '14px' }} />
+                                </div>
+                                <div className="mt-0">
+                                    <p className="font-size-6 mb-0 font-weight-bold">
+                                        <a style={{ color: '#000' }} href="https://crenshawyogaanddance.com/" target="_blank">Crenshaw Yoga & Dance</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
