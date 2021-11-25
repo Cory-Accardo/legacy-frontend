@@ -294,7 +294,8 @@ const Categories = ({ className, ...rest }) => {
           <SliderStyled ref={elSlider} {...slickSettings} className="h1-category-slider">
             {items.map(({ link, title, image, jobs, primaryColor }, index) => (
               <Link key={index} href={link}>
-                <a target="_blank"
+                <a
+                  target="_blank"
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
                   tabIndex="-1"
                 >

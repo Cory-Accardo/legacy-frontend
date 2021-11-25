@@ -1,6 +1,10 @@
 // import App from 'next/app'
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalContext";
+import { useEffect } from "react";
+import Script from 'next/script'
+import * as gtag from '../utils/gtag'
+
 
 import "../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
 import "../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
@@ -26,6 +30,17 @@ import "../assets/scss/bootstrap.scss";
 import "../assets/scss/main.scss";
 
 const MyApp = ({ Component, pageProps, router }) => {
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   if (router.pathname.match(/sign|reset|coming/)) {
     return (
       <GlobalProvider>
@@ -37,11 +52,29 @@ const MyApp = ({ Component, pageProps, router }) => {
   }
 
   return (
-    <GlobalProvider>
-      <Layout pageContext={{}}>
-        <Component {...pageProps} />
-      </Layout>
-    </GlobalProvider>
+      <GlobalProvider>
+        <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+        <Layout pageContext={{}}>
+          <Component {...pageProps} />
+        </Layout>
+      </GlobalProvider>
   );
 };
 
