@@ -15,6 +15,7 @@ import tossItUp from "../../assets/image/homepage/png/categories/toss-it-up.png"
 import pipsOnLaBrea from "../../assets/image/homepage/png/categories/pips-on-labrea.png";
 import freewayEasy from "../../assets/image/homepage/png/categories/freeway-easy.png";
 import deliciousAtDunbar from "../../assets/image/homepage/png/categories/delicious-at-dunbar.png";
+import AF from "../../assets/image/homepage/png/categories/AF.png";
 
 const SliderStyled = styled(Slider)`
   .slick-slide div {
@@ -25,6 +26,12 @@ const SliderStyled = styled(Slider)`
 `;
 
 const items = [
+  {
+    title: "Aqua Equity",
+    link: "aquaequity",
+    image: AF,
+    primaryColor: '#00A0DE'
+  },
   {
     title: "Jordan's Hot Dogs",
     link: "jordanshotdogs",
