@@ -19,7 +19,7 @@ const CardSection = ({ className,productId,productId2, businessName, ...rest }) 
                                 The ShopLove SLASHcard.
                             </h1>
                             <p className="font-size-7 text-black">
-                                Can’t decide what to purchase from {businessName}?
+                                {businessName}
                             </p>
                             <p className="font-size-7 text-black">
                                 Purchase the ShopLove SLASH card today.

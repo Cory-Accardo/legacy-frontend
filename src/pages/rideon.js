@@ -26,7 +26,7 @@ const RideOn = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection businessName='Ride on' productId='prod_Kd48LcqaYhPqWi' productId2='prod_Kd4BGLa6W3VIOJ' className="bg-transparent pt-12 pb-12" />
+                <CardSection businessName='Can’t decide what to purchase from Ride on?' productId='prod_Kd48LcqaYhPqWi' productId2='prod_Kd4BGLa6W3VIOJ' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

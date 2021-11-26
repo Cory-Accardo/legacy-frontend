@@ -27,7 +27,7 @@ const CrenshawYogaDance = () => {
                 }}
             >
                                 <Hero className="pt-30 pb-12" />
-                <CardSection businessName='Crenshaw yoga dance' productId='' productId2='' className="bg-transparent pt-12 pb-12" />
+                <CardSection businessName='Can’t decide what to purchase from Crenshaw yoga dance?' productId='' productId2='' className="bg-transparent pt-12 pb-12" />
                 {/* <Checkout className="pt-12 pb-12" style={{ backgroundColor: '#fdbf4a' }} /> */}
                 <SectionDetail className="bg-default-5 pt-13 pb-12" style={{ backgroundColor: '#F8F8F9' }} />
                 <ClientSection className="bg-transparent pt-22 pb-18" />

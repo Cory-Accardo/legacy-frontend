@@ -26,7 +26,7 @@ const PipsOnLaBreas = () => {
                 }}
             >
                 <Hero className="pt-30 pb-12" />
-                <CardSection businessName='Pips on labreas' productId='prod_Ke8POZglqssJfv' productId2='prod_Ke8TGSUpvBrd70' className="bg-transparent pt-12 pb-12" />
+                <CardSection businessName='Can’t decide what to purchase from Pips on labreas?' productId='prod_Ke8POZglqssJfv' productId2='prod_Ke8TGSUpvBrd70' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-13 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>
