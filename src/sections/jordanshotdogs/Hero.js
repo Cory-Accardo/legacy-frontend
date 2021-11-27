@@ -4,7 +4,7 @@ import imageUrl from "../../assets/image/jordanshotdogs/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/jordanshotdogs/png/hero-cta-btn-image.png";
 import arrow from "../../assets/image/arrow.png";
 import Link from "next/link";
-import purchase from '../../utils/purchase'
+import BuyButton from "../common/BuyButton";
 
 
 const Hero = ({ className, ...rest }) => {
@@ -36,9 +36,9 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                    
-                      <button onClick={() => purchase('prod_KcwNM68UeHOaLZ')} className="btn btn-dark-green btn-3 rounded-5 text-white" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
+                      <BuyButton productId='prod_KcwNM68UeHOaLZ' className="btn btn-dark-green btn-3 rounded-5 text-white" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
                         Buy the Harriet
-                      </button>
+                      </BuyButton>
 
                   </div>
                   <div className="col-lg-7">

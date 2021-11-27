@@ -3,6 +3,7 @@ import arrow from "../../assets/image/arrow.png";
 import imageUrl from "../../assets/image/martgolsmagic/png/hero-image-1.png";
 import heroCtaBtnImage from "../../assets/image/martgolsmagic/png/hero-cta-btn-image.png";
 
+
 const Hero = ({ className, ...rest }) => {
   return (
     <div className={className} {...rest}>

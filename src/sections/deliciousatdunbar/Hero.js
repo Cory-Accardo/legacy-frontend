@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/deliciousatdunbar/png/hero-image.png";
-import purchase from '../../utils/purchase';
+import BuyButton from "../common/BuyButton";
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -38,12 +38,12 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                 <div className="col-lg-12 mb-10">
            
-                  <button onClick={() => purchase('prod_KdpIVWIwjXqjO7')} className="btn btn-dark-green btn-2 rounded-5 text-white mr-4" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
+                  <BuyButton productId='prod_KdpIVWIwjXqjO7' className="btn btn-dark-green btn-2 rounded-5 text-white mr-4" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
                   Buy Special #1
-                  </button>
-                  <button onClick={() => purchase('prod_Kdq1lvQY84Auxb')} className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
+                  </BuyButton>
+                  <BuyButton productId='prod_Kdq1lvQY84Auxb' className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
                   Buy Special #2
-                  </button>
+                  </BuyButton>
                
                   </div>
                   <div className="col-lg-12">

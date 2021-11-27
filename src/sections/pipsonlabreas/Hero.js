@@ -2,7 +2,7 @@ import React from "react";
 import arrow from "../../assets/image/arrow.png";
 import imageUrl from "../../assets/image/pipsonlabreas/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/pipsonlabreas/png/hero-cta-btn-image.png";
-import purchase from '../../utils/purchase';
+import BuyButton from "../common/BuyButton";
 
 const Hero = ({ className, ...rest }) => {
   return (
@@ -30,9 +30,9 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                
-                      <button onClick={() => purchase('prod_Ke14nMwBW69Cv3')} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
+                      <BuyButton productId='prod_Ke14nMwBW69Cv3' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
                       Reservations at PIPS
-                      </button>
+                      </BuyButton>
                 
                   </div>
                   <div className="col-lg-7">
