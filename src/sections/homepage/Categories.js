@@ -16,6 +16,7 @@ import pipsOnLaBrea from "../../assets/image/homepage/png/categories/pips-on-lab
 import freewayEasy from "../../assets/image/homepage/png/categories/freeway-easy.png";
 import deliciousAtDunbar from "../../assets/image/homepage/png/categories/delicious-at-dunbar.png";
 import AF from "../../assets/image/homepage/png/categories/AF.png";
+import misla from "../../assets/image/homepage/png/categories/misla.png";
 
 const SliderStyled = styled(Slider)`
   .slick-slide div {
@@ -26,6 +27,12 @@ const SliderStyled = styled(Slider)`
 `;
 
 const items = [
+  {
+    title: "Misla",
+    link: "misla",
+    image: misla,
+    primaryColor: '#F86825'
+  },
   {
     title: "Aqua Equity",
     link: "aquaequity",
