@@ -5,8 +5,14 @@ import Hero from "../sections/misla/Hero";
 import SectionDetail from "../sections/misla/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/misla/png/logo-main.png';
+import * as gtag from '../utils/gtag'
 
 const Misla = () => {
+    
+    const handleClick = () => {
+        gtag.event({ action: 'go_to_section', category: gtag.EventCategories.click, label: 'Click the button from header', value: window.location.pathname });
+    };
+
     return (
         <>
             <PageWrapper
@@ -16,7 +22,7 @@ const Misla = () => {
                     headerFluid: false,
                     headerButton: (
                         <>
-                            <a href="/#slashcard" className="btn btn btn-sunset btn-medium rounded-5 font-size-3" style={{ background: '#00793D', borderColor: '#00793D' }}>
+                            <a href="/#slashcard" onClick={handleClick} className="btn btn btn-sunset btn-medium rounded-5 font-size-3" style={{ background: '#00793D', borderColor: '#00793D' }}>
                                 $hop Love
                             </a>
                         </>
