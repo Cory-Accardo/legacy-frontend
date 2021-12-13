@@ -1,13 +1,15 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect} from "react";
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import {useRouter} from 'next/router'
 
 import GlobalContext from "../../context/GlobalContext";
 import Offcanvas from "../Offcanvas";
 import Menu from "./Menu";
 import NestedMenu from "../NestedMenu";
 import Logo from "../Logo";
+import SocialButtons from '../../sections/common/SocialButtons'
 
 const SiteHeader = styled.header``;
 
@@ -17,6 +19,22 @@ const Header = () => {
   const gContext = useContext(GlobalContext);
   const [showScrolling, setShowScrolling] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
+
+  const [windowWidth, setWindowWidth] = useState()
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', window);
+    }
+  }, [])
+
+  const router = useRouter();
+
 
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y < 0) {
@@ -30,7 +48,7 @@ const Header = () => {
       setShowReveal(false);
     }
   });
-  console.log(gContext.theme.logoImage);
+  console.log(router.pathname)
 
   return (
     <>
@@ -47,10 +65,16 @@ const Header = () => {
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg  px-0">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo mt-3 mt-md-0 d-flex align-items-center justify-content-center">
-              <Logo logo={gContext.theme.logoImage} />
-            </div>
+              { (windowWidth > 767  || router.pathname == '/') ? <Logo logo={gContext.theme.logoImage}/> : <Logo/>}
+              {windowWidth >= 991 ? null : <SocialButtons style={{margin: '0 0 0 20px' , display:'flex', gap: '5px'}} pathname={router.pathname}/>}
 
-            <div className="collapse navbar-collapse">
+            </div>
+            
+
+
+
+            <div className="collapse navbar-collapse"> 
+            {windowWidth < 991 ? null : <SocialButtons style={{margin:'0 auto', display:'flex', gap: '5px'}} pathname={router.pathname}/>}
               <div className="navbar-nav-wrapper">
                 <Menu />
               </div>

@@ -33,6 +33,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-select": "^5.2.1",
+    "react-share": "^4.4.0",
     "react-slick": "^0.28.1",
     "sass": "^1.29.0",
     "slick-carousel": "^1.8.1",
