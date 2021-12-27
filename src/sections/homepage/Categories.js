@@ -108,11 +108,11 @@ const Categories = ({ className, ...rest }) => {
     dots: false,
     autoplay: true,
     infinite: true,
-    speed: 300,
+    speed: 500,
+    autoplaySpeed: 800,
     centerPadding: "28%",
     centerMode: true,
     slidesToShow: 3,
-    // slidesToScroll: 3,
     arrows: false,
     className: "single-slide",
 

@@ -30,9 +30,9 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                
-                      <BuyButton productId='prod_Ke14nMwBW69Cv3' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
+                    <a href="https://pipsonlabrea.com/" className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
                       Reservations at PIPS
-                      </BuyButton>
+                    </a>
                 
                   </div>
                   <div className="col-lg-7">
