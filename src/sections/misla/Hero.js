@@ -4,6 +4,9 @@ import Link from "next/link";
 import imgM from "../../assets/image/misla/png/hero-image.png";
 
 const Hero = ({ className, ...rest }) => {
+  const handleClick = () => {
+    gtag.event({ action: 'register_today', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -25,7 +28,7 @@ const Hero = ({ className, ...rest }) => {
               </p>
               <div className="mt-10">
                 <Link href="https://misla.org/">
-                  <a className="btn btn-dark-green btn-1 rounded-5 text-white" target="_blank" style={{ background: '#F86825', borderColor: '#F86825' }}>
+                  <a className="btn btn-dark-green btn-1 rounded-5 text-white" onClick={handleClick} target="_blank" style={{ background: '#F86825', borderColor: '#F86825' }}>
                     Register Today
                   </a>
                 </Link>

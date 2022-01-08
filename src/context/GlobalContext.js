@@ -4,7 +4,12 @@ import BrandLogo from '../assets/image/VSEDC-logo-1.png';
 
 
 const GlobalContext = React.createContext();
-
+const handleClick = () => {
+  gtag.event({ action: '$shop_love', category: gtag.EventCategories.header, label: window.location.pathname, value: window.location.pathname });
+};
+const handleClick2 = () => {
+  gtag.event({ action: 'Vsedc_logo', category: gtag.EventCategories.header, label: window.location.pathname, value: window.location.pathname });
+};
 export const themeConfigDefault = {
   bodyDark: false,
   headerDark: false,
@@ -15,12 +20,12 @@ export const themeConfigDefault = {
     <>
     <div className="d-flex align-items-center justify-content-end">
       <Link href="/#slashcard" >
-        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" target="_blank" style={{ background: '#00793D', borderColor: '#00793D' }}>
+        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" target="_blank" style={{ background: '#00793D', borderColor: '#00793D' }} onClick={handleClick}>
           $hop Love
         </a>
       </Link>
       <Link href="https://vsedc.org/">
-        <a className="d-inline-block min-wauto" target="_blank">
+        <a className="d-inline-block min-wauto" target="_blank" onClick={handleClick2}>
           <img src={BrandLogo} alt="logo" width="60"/>
         </a>
       </Link>

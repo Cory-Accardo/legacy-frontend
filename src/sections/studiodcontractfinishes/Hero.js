@@ -5,6 +5,9 @@ import imgM from "../../assets/image/studiodcontractfinishes/png/hero-image.png"
 import BuyButton from '../../sections/common/BuyButton'
 
 const Hero = ({ className, ...rest }) => {
+  const handleClick = () => {
+    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.buynow, label: window.location.pathname, value: window.location.pathname });
+  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -39,7 +42,7 @@ const Hero = ({ className, ...rest }) => {
 
                   <div className="col-lg-5">
 
-                    <BuyButton productId='prod_Kdy1tQ82a0V2fR' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
+                    <BuyButton productId='prod_Kdy1tQ82a0V2fR'  onClick={handleClick} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}  onClick={handleClick}>
                       Book Your Consultation
                     </BuyButton>
 

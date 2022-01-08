@@ -8,6 +8,9 @@ import BuyButton from "../common/BuyButton";
 
 
 const Hero = ({ className, ...rest }) => {
+  const handleClick = () => {
+    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.buynow, label: window.location.pathname, value: window.location.pathname });
+  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -36,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                    
-                      <BuyButton productId='prod_KcwNM68UeHOaLZ' className="btn btn-dark-green btn-3 rounded-5 text-white" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
+                      <BuyButton productId='prod_KcwNM68UeHOaLZ' onClick={handleClick} className="btn btn-dark-green btn-3 rounded-5 text-white" style={{ background: '#6F0E16', borderColor: '#6F0E16' }}>
                         Buy the Harriet
                       </BuyButton>
 

@@ -10,7 +10,7 @@ import * as gtag from '../utils/gtag'
 const Misla = () => {
     
     const handleClick = () => {
-        gtag.event({ action: 'go_to_section', category: gtag.EventCategories.click, label: 'Click the button from header', value: window.location.pathname });
+        gtag.event({ action: 'go_to_section', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
     };
 
     return (

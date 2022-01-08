@@ -5,6 +5,9 @@ import heroCtaBtnImage from "../../assets/image/pipsonlabreas/png/hero-cta-btn-i
 import BuyButton from "../common/BuyButton";
 
 const Hero = ({ className, ...rest }) => {
+  const handleClick = () => {
+    gtag.event({ action: 'reservations_at_PIPS', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -30,7 +33,7 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                
-                    <a href="https://pipsonlabrea.com/" className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
+                    <a href="https://pipsonlabrea.com/"  onClick={handleClick} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
                       Reservations at PIPS
                     </a>
                 
