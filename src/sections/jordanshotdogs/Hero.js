@@ -5,6 +5,7 @@ import heroCtaBtnImage from "../../assets/image/jordanshotdogs/png/hero-cta-btn-
 import arrow from "../../assets/image/arrow.png";
 import Link from "next/link";
 import BuyButton from "../common/BuyButton";
+import * as gtag from '../../utils/gtag';
 
 
 const Hero = ({ className, ...rest }) => {

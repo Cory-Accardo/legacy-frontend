@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/crenshawyogadance/png/hero-image.png";
+import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
   const handleClick = () => {

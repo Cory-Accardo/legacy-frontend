@@ -4,6 +4,7 @@ import Link from "next/link";
 import imgM from "../../assets/image/hotcool/png/hero-image-1.png";
 import arrow from "../../assets/image/arrow.png";
 import BuyButton from "../common/BuyButton";
+import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
   const handleClick = () => {

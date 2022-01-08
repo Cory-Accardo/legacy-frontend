@@ -9,6 +9,7 @@ import QRLogo1 from "../../assets/image/footer-5/png/QR-image-1.png";
 import QRLogo2 from "../../assets/image/footer-5/png/QR-image-2.png";
 import QRLogo3 from "../../assets/image/footer-5/png/QR-image-3.png";
 import MartyLogo from "../../assets/image/footer-5/png/marty-logo.png";
+import * as gtag from '../../utils/gtag';
 
 const Footer = ({ className, ...rest }) => {
   const handleClick = () => {

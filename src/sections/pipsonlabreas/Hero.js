@@ -3,6 +3,7 @@ import arrow from "../../assets/image/arrow.png";
 import imageUrl from "../../assets/image/pipsonlabreas/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/pipsonlabreas/png/hero-cta-btn-image.png";
 import BuyButton from "../common/BuyButton";
+import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
   const handleClick = () => {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/studiodcontractfinishes/png/hero-image.png";
 import BuyButton from '../../sections/common/BuyButton'
+import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
   const handleClick = () => {

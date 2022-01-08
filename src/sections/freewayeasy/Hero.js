@@ -4,6 +4,7 @@ import imageUrl from "../../assets/image/freewayeasy/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/freewayeasy/png/hero-cta-btn-image.png";
 import arrow from "../../assets/image/arrow.png";
 import BuyButton from "../common/BuyButton";
+import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
   const handleClick = () => {

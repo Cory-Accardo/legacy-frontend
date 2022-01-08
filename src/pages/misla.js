@@ -5,12 +5,12 @@ import Hero from "../sections/misla/Hero";
 import SectionDetail from "../sections/misla/SectionDetail";
 import ClientSection from "../sections/common/ClientSection";
 import BrandLogo from '../assets/image/misla/png/logo-main.png';
-import * as gtag from '../utils/gtag'
+import * as gtag from '../utils/gtag';
 
 const Misla = () => {
     
     const handleClick = () => {
-        gtag.event({ action: 'go_to_section', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+        gtag.event({ action: '$shop_love', category: gtag.EventCategories.header, label: window.location.pathname, value: window.location.pathname });
     };
 
     return (

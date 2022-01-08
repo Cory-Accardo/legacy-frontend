@@ -5,6 +5,7 @@ import heroCtaBtnImage from "../../assets/image/rideon/png/hero-cta-btn-image.pn
 import arrow from "../../assets/image/arrow.png";
 import purchase from '../../utils/purchase';
 import BuyButton from "../common/BuyButton";
+import * as gtag from '../../utils/gtag';
 
 // const fontFamilyAdd = {
 //   fontFamily: ''

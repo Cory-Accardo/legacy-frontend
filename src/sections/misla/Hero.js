@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import * as gtag from '../../utils/gtag';
 
 import imgM from "../../assets/image/misla/png/hero-image.png";
 

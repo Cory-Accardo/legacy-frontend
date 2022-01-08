@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import BrandLogo from '../assets/image/VSEDC-logo-1.png';
+import * as gtag from '../utils/gtag';
 
 
 const GlobalContext = React.createContext();

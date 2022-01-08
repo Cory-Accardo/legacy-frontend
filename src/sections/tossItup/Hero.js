@@ -4,6 +4,7 @@ import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/tossItUp/png/hero-image-1.png";
 import purchase from '../../utils/purchase';
 import BuyButton from "../common/BuyButton";
+import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
   return (
