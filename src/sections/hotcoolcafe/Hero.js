@@ -6,6 +6,9 @@ import arrow from "../../assets/image/arrow.png";
 import BuyButton from "../common/BuyButton";
 
 const Hero = ({ className, ...rest }) => {
+  const handleClick = () => {
+    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.buynow, label: window.location.pathname, value: window.location.pathname });
+  };
   return (
     <div className={className} {...rest}>
       <div className="container position-static">
@@ -39,7 +42,7 @@ const Hero = ({ className, ...rest }) => {
               <div className="mt-10">
                 <div className="row align-items-center">
                   <div className="col-lg-5">
-                    <BuyButton productId='prod_KbV4Z107OYcnDv' target="_blank" className="btn btn-dark-green btn-1 mb-8 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
+                    <BuyButton productId='prod_KbV4Z107OYcnDv'  onClick={handleClick} target="_blank" className="btn btn-dark-green btn-1 mb-8 rounded-5" style={{ background: '#000', borderColor: '#000' }}>
                       Order Now
                     </BuyButton>
                   </div>
