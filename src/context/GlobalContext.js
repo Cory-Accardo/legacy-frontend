@@ -8,9 +8,6 @@ const GlobalContext = React.createContext();
 const handleClick = () => {
   gtag.event({ action: '$shop_love', category: gtag.EventCategories.header, label: window.location.pathname, value: window.location.pathname });
 };
-const handleClick2 = () => {
-  gtag.event({ action: 'Vsedc_logo', category: gtag.EventCategories.header, label: window.location.pathname, value: window.location.pathname });
-};
 export const themeConfigDefault = {
   bodyDark: false,
   headerDark: false,
@@ -26,7 +23,7 @@ export const themeConfigDefault = {
         </a>
       </Link>
       <Link href="https://vsedc.org/">
-        <a className="d-inline-block min-wauto" target="_blank" onClick={handleClick2}>
+        <a className="d-inline-block min-wauto" target="_blank">
           <img src={BrandLogo} alt="logo" width="60"/>
         </a>
       </Link>

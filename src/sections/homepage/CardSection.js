@@ -1,12 +1,8 @@
 import React from 'react';
 import purchase from '../../utils/purchase';
 import imgM from "../../assets/image/homepage/png/section-image-1.png";
-import * as gtag from '../../utils/gtag';
 
 const CardSection = ({ className, ...rest }) => {
-    const handleClick = () => {
-        gtag.event({ action: 'shop_love_now', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-      };
     return (
         <section className={className} {...rest}>
             <div className="container border-bottom pt-12 pb-16">
@@ -46,7 +42,7 @@ const CardSection = ({ className, ...rest }) => {
                                 Get a $250 gift card for $125 or get a $100 card for $50 for a limited time.
                         </p>
                         <div className="mt-8">
-                                <a href="/#slashcard" className="btn btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }} onClick={handleClick}>
+                                <a href="/#slashcard" className="btn btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
                                 SHOPLOVE <br />NOW   
                                 </a>
                             </div>

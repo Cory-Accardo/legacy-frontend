@@ -5,12 +5,13 @@ import imgMsc2 from "../../assets/image/slashcard2.png";
 import BuyButton from './BuyButton';
 import * as gtag from '../../utils/gtag';
 
-const handleClick = () => {
-    gtag.event({ action: 'buy_now_card', category: gtag.EventCategories.buynow, label: window.location.pathname, value: window.location.pathname });
-  };
-
 const CardSection = ({ className,productId,productId2, businessName, ...rest }) => {
-
+    const handleClick = () => {
+        gtag.event({ action: '$250_card_for_$125', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+      };
+    const handleClick2 = () => {
+        gtag.event({ action: '$100_card_for_$50', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+      };
     return (
         <div className={className} {...rest}>
             <div className="container border-top pt-20 pb-5">
@@ -54,7 +55,7 @@ const CardSection = ({ className,productId,productId2, businessName, ...rest }) 
                             <div className="col-lg-6">
                                 <div className="text-center mb-xs-7  mb-0" data-aos="flip-right" data-aos-delay={900}>
                                     <img className="mb-4" width="320" src={imgMsc2} alt="image" />
-                                    <BuyButton productId={productId2} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}  onClick={handleClick}>
+                                    <BuyButton productId={productId2} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}  onClick={handleClick2}>
                                         $100 card for $50 <br/>
                                         BUY NOW
                                     </BuyButton>
