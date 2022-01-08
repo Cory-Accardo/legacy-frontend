@@ -1,6 +1,7 @@
 import React from 'react';
 import purchase from '../../utils/purchase';
 import imgM from "../../assets/image/homepage/png/section-image-1.png";
+import * as gtag from '../../utils/gtag';
 
 const CardSection = ({ className, ...rest }) => {
     const handleClick = () => {

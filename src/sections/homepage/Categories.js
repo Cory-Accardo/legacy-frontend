@@ -17,7 +17,10 @@ import freewayEasy from "../../assets/image/homepage/png/categories/freeway-easy
 import deliciousAtDunbar from "../../assets/image/homepage/png/categories/delicious-at-dunbar.png";
 import AF from "../../assets/image/homepage/png/categories/AF.png";
 import misla from "../../assets/image/homepage/png/categories/misla.png";
-
+import * as gtag from '../../utils/gtag';
+const handleClick = () => {
+  gtag.event({ action: 'shop_love_now', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+};
 const SliderStyled = styled(Slider)`
   .slick-slide div {
     &:focus {
@@ -307,7 +310,7 @@ const Categories = ({ className, ...rest }) => {
         >
           <SliderStyled ref={elSlider} {...slickSettings} className="h1-category-slider">
             {items.map(({ link, title, image, jobs, primaryColor }, index) => (
-              <Link key={index} href={link}>
+              <Link key={index} href={link} onClick={handleClick}>
                 <a
                   target="_blank"
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
