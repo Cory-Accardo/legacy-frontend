@@ -19,7 +19,7 @@ import AF from "../../assets/image/homepage/png/categories/AF.png";
 import misla from "../../assets/image/homepage/png/categories/misla.png";
 import * as gtag from '../../utils/gtag';
 const handleClick = () => {
-  gtag.event({ action: 'shop_love_now', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+  gtag.event({ action: 'business_tiles', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
 };
 const SliderStyled = styled(Slider)`
   .slick-slide div {
@@ -310,11 +310,12 @@ const Categories = ({ className, ...rest }) => {
         >
           <SliderStyled ref={elSlider} {...slickSettings} className="h1-category-slider">
             {items.map(({ link, title, image, jobs, primaryColor }, index) => (
-              <Link key={index} href={link} onClick={handleClick}>
+              <Link key={index} href={link}>
                 <a
                   target="_blank"
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
                   tabIndex="-1"
+                  onClick={handleClick}
                 >
                   <div className="bg-cat shadow-2 min-w-255 min-h-222 gr-hover-1 text-center">
                     

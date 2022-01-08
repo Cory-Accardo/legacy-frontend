@@ -5,11 +5,12 @@ import imgMsc2 from "../../assets/image/slashcard2.png";
 import BuyButton from './BuyButton';
 import * as gtag from '../../utils/gtag';
 
+const handleClick = () => {
+    gtag.event({ action: 'buy_now_card', category: gtag.EventCategories.buynow, label: window.location.pathname, value: window.location.pathname });
+  };
 
 const CardSection = ({ className,productId,productId2, businessName, ...rest }) => {
-    const handleClick = () => {
-        gtag.event({ action: 'buy_now_card', category: gtag.EventCategories.buynow, label: window.location.pathname, value: window.location.pathname });
-      };
+
     return (
         <div className={className} {...rest}>
             <div className="container border-top pt-20 pb-5">
