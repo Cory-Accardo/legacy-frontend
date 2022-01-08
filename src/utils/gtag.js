@@ -20,5 +20,4 @@ export const EventCategories = {
   click: 'Click',
   header: 'Header',
   footer: 'Footer',
-  buynow: 'Buy Now',
 }
