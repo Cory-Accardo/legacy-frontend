@@ -2,12 +2,8 @@ import React from "react";
 import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/crenshawyogadance/png/hero-image.png";
-import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <div className={className} {...rest}>
       <div className="container position-static">
@@ -42,7 +38,7 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                     <Link href="/#">
-                      <a className="btn btn-dark-green btn-1 rounded-5 text-white"  onClick={handleClick} target="_blank" style={{ background: '#F6A682', borderColor: '#F6A682' }}>
+                      <a className="btn btn-dark-green btn-1 rounded-5 text-white" target="_blank" style={{ background: '#F6A682', borderColor: '#F6A682' }}>
                         Buy Now
                       </a>
                     </Link>

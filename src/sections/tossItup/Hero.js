@@ -4,12 +4,8 @@ import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/tossItUp/png/hero-image-1.png";
 import purchase from '../../utils/purchase';
 import BuyButton from "../common/BuyButton";
-import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <div className={className} {...rest}>
       <div className="container position-static">
@@ -43,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
               <div className="mt-10">
                 <div className="row align-items-center">
                   <div className="col-lg-5">
-                    <BuyButton productId ='prod_KeCBzXX5Inb3Qs' onClick={handleClick} className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
+                    <BuyButton productId ='prod_KeCBzXX5Inb3Qs' className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
                       Place Your Order
                     </BuyButton>
                   </div>

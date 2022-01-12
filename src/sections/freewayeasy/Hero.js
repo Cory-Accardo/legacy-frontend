@@ -4,12 +4,8 @@ import imageUrl from "../../assets/image/freewayeasy/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/freewayeasy/png/hero-cta-btn-image.png";
 import arrow from "../../assets/image/arrow.png";
 import BuyButton from "../common/BuyButton";
-import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -32,7 +28,7 @@ const Hero = ({ className, ...rest }) => {
                 to prepare the driver for a permit or licsence.
               </p>
               <div className="d-flex align-items-center py-6 mr-xl-15">
-                <BuyButton productId='prod_Ke14nMwBW69Cv3' onClick={handleClick} className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
+                <BuyButton productId='prod_Ke14nMwBW69Cv3' className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
                   Sign-Up Now
                 </BuyButton>
               </div>

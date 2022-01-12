@@ -3,12 +3,8 @@ import arrow from "../../assets/image/arrow.png";
 import imageUrl from "../../assets/image/pipsonlabreas/png/hero-image.png";
 import heroCtaBtnImage from "../../assets/image/pipsonlabreas/png/hero-cta-btn-image.png";
 import BuyButton from "../common/BuyButton";
-import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'reservations_at_PIPS', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -34,9 +30,9 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                   <div className="col-lg-5">
                
-                    <a href="https://pipsonlabrea.com/"  onClick={handleClick} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
+                      <BuyButton productId='prod_Ke14nMwBW69Cv3' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#382012', borderColor: '#382012' }}>
                       Reservations at PIPS
-                    </a>
+                      </BuyButton>
                 
                   </div>
                   <div className="col-lg-7">

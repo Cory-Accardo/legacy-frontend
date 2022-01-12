@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import BrandLogo from '../assets/image/VSEDC-logo-1.png';
-import * as gtag from '../utils/gtag';
+import CartButton from "../utils/cartButton";
 
 
 const GlobalContext = React.createContext();
-const handleClick = () => {
-  gtag.event({ action: '$shop_love', category: gtag.EventCategories.header, label: window.location.pathname, value: window.location.pathname });
-};
+
 export const themeConfigDefault = {
   bodyDark: false,
   headerDark: false,
@@ -17,8 +15,10 @@ export const themeConfigDefault = {
   headerButton: (
     <>
     <div className="d-flex align-items-center justify-content-end">
+      <CartButton />
+
       <Link href="/#slashcard" >
-        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" target="_blank" style={{ background: '#00793D', borderColor: '#00793D' }} onClick={handleClick}>
+        <a className="btn btn btn-sunset btn-medium rounded-5 font-size-3 mr-7" target="_blank" style={{ background: '#00793D', borderColor: '#00793D' }}>
           $hop Love
         </a>
       </Link>

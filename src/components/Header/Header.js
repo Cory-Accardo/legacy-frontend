@@ -10,6 +10,7 @@ import Menu from "./Menu";
 import NestedMenu from "../NestedMenu";
 import Logo from "../Logo";
 import SocialButtons from '../../sections/common/SocialButtons'
+import CartButton from "../../utils/cartButton";
 
 const SiteHeader = styled.header``;
 
@@ -55,7 +56,7 @@ const Header = () => {
       <SiteHeader
         className={`site-header ${
           gContext.theme.headerClassName
-        } px-7 px-lg-10 dynamic-sticky-bg site-header--absolute site-header--sticky
+        } ${windowWidth < 767 ? 'px-0' : 'px-7'} px-lg-10 dynamic-sticky-bg site-header--absolute site-header--sticky
 
         ${showScrolling ? "scrolling" : ""} ${
           showReveal ? "reveal-header " : ""
@@ -67,11 +68,8 @@ const Header = () => {
             <div className="brand-logo mt-3 mt-md-0 d-flex align-items-center justify-content-center">
               { (windowWidth > 767  || router.pathname == '/') ? <Logo logo={gContext.theme.logoImage}/> : <Logo/>}
               {windowWidth >= 991 ? null : <SocialButtons style={{margin: '0 0 0 20px' , display:'flex', gap: '5px'}} pathname={router.pathname}/>}
-
             </div>
             
-
-
 
             <div className="collapse navbar-collapse"> 
             {windowWidth < 991 ? null : <SocialButtons style={{margin:'0 auto', display:'flex', gap: '5px'}} pathname={router.pathname}/>}
@@ -79,7 +77,7 @@ const Header = () => {
                 <Menu />
               </div>
             </div>
-
+            {router.pathname === '/' && windowWidth > 767 ? null : router.pathname === '/' && windowWidth < 767 ? <CartButton /> : <CartButton />}
             {gContext.theme.headerButton && (
               <div className="header-btn ml-auto ml-lg-0 d-none d-xs-block">
                 {gContext.theme.headerButton}
