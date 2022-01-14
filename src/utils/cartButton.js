@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import styled from "styled-components";
 import checkoutIcon from '../assets/image/checkout.png';
 import cartIcon from '../assets/image/cart-icon.png';
 import cartImage from '../assets/image/cart-item-img.png';
+import GlobalContext from "../context/GlobalContext";
+
 
 import {FaMinus, FaPlus, FaTimes} from "react-icons/fa";
 
@@ -232,6 +234,8 @@ const StyledCartButton = styled.div`
 `;
 
 const CartButton = () => {
+  const {alertCart, cartUpdated} = useContext(GlobalContext);
+  
   const [windowWidth, setWindowWidth] = useState();
   const [productCount, setProductCount] = useState();
   const [productList, setProductList] = useState([]);
@@ -241,17 +245,16 @@ const CartButton = () => {
   useEffect(() => {
     setWindowWidth(window.innerWidth);
     let storageProd = JSON.parse(localStorage.getItem('productsArr'));
-    if (storageProd) {
-      setProductCount(storageProd.length);
-      setProductList(storageProd);
-    }
+    setProductCount(storageProd.length);
+    setProductList(storageProd);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', window);
     };
-  }, []);
+  }, [cartUpdated]);
 
   const setQuantityCount = (product, type) => {
+    alertCart();
     let productFoundIndex = productList.findIndex((o) => o.productId === product.productId);
     let productFound = productList.find((o) => o.productId === product.productId);
     let resultantArr = [...productList];
@@ -273,6 +276,7 @@ const CartButton = () => {
   };
 
   const removeProduct = (id) => {
+    alertCart();
     let productFoundIndex = productList.findIndex((o) => o.productId === id);
     let productFound = productList.find((o) => o.productId === id);
     let resultantArr = [...productList];

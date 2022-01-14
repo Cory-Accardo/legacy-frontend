@@ -6,6 +6,8 @@ import CartButton from "../utils/cartButton";
 
 const GlobalContext = React.createContext();
 
+
+
 export const themeConfigDefault = {
   bodyDark: false,
   headerDark: false,
@@ -35,10 +37,13 @@ export const themeConfigDefault = {
   headerLogoClassName: "",
   footerStyle: "style5",
   footerClassName: "",
-  logoImage: null
+  logoImage: null,
+  cartUpdated : true,
+  setCartUpdated : undefined,
 };
 
 const GlobalProvider = ({ children }) => {
+  const [cartUpdated, setCartUpdated] = useState(true);
   const [theme, setTheme] = useState(themeConfigDefault);
   const [videoModalVisible, setVideoModalVisible] = useState(false);
   const [visibleOffCanvas, setVisibleOffCanvas] = useState(false);
@@ -49,6 +54,10 @@ const GlobalProvider = ({ children }) => {
       ...themeConfig,
     });
   };
+
+  const alertCart = () => {
+    setCartUpdated(!cartUpdated);
+  }
 
   const toggleVideoModal = () => {
     setVideoModalVisible(!videoModalVisible);
@@ -66,6 +75,8 @@ const GlobalProvider = ({ children }) => {
     <GlobalContext.Provider
       value={{
         theme,
+        cartUpdated,
+        alertCart,
         changeTheme,
         videoModalVisible,
         toggleVideoModal,
