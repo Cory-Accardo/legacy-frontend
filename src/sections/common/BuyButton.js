@@ -6,7 +6,7 @@ import GlobalContext from '../../context/GlobalContext';
 
 
 const BuyButton = ({ children, style, className, businessTitle, title, img, price, productId, target, setProduct }) => {
-    const {alertCart} = useContext(GlobalContext);
+    const { addProduct} = useContext(GlobalContext);
     const [gif, setGif] = useState(null);
 
     // setGif(loadingGif)
@@ -15,8 +15,7 @@ const BuyButton = ({ children, style, className, businessTitle, title, img, pric
 
     return (
         <button target={target} style= {style} className={className} onClick={() => {
-            setProduct({productId, price, img, title, businessTitle})
-            alertCart();
+            addProduct({productId, price, img, title, businessTitle})
         }}>
         <img style={{maxHeight: '50px'}} src={gif}/>
         {children}

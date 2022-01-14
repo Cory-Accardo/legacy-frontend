@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import BrandLogo from '../assets/image/VSEDC-logo-1.png';
 import CartButton from "../utils/cartButton";
@@ -43,10 +43,84 @@ export const themeConfigDefault = {
 };
 
 const GlobalProvider = ({ children }) => {
+  
+  const [windowWidth, setWindowWidth] = useState();
+  const [productCount, setProductCount] = useState();
+  const [productList, setProductList] = useState([]);
   const [cartUpdated, setCartUpdated] = useState(true);
   const [theme, setTheme] = useState(themeConfigDefault);
   const [videoModalVisible, setVideoModalVisible] = useState(false);
   const [visibleOffCanvas, setVisibleOffCanvas] = useState(false);
+
+  
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    let storageProd = JSON.parse(localStorage.getItem('productsArr'));
+    setProductCount(storageProd.length);
+    setProductList(storageProd);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', window);
+    };
+  }, [cartUpdated]);
+
+  const setQuantityCount = (product, type) => {
+    let productFoundIndex = productList.findIndex((o) => o.productId === product.productId);
+    let productFound = productList.find((o) => o.productId === product.productId);
+    let resultantArr = [...productList];
+    let businessTitle = product.businessTitle.split("from");
+    businessTitle = businessTitle[businessTitle.length - 1].trim().slice(0, -1);
+
+    if (productFound) {
+      if (type === 'increment') {
+        if (productFound.quantity >= 1) {
+          resultantArr[productFoundIndex] = { productId: product.productId, quantity: productFound.quantity + 1, img: product.img, title: product.title, price: product.price, businessTitle: businessTitle };
+        }
+      } else if (type === 'decrement') {
+        if (productFound.quantity > 1) {
+          resultantArr[productFoundIndex] = { productId: product.productId, quantity: productFound.quantity - 1, img: product.img, title: product.title, price: product.price, businessTitle: businessTitle };
+        }
+      }
+      setProductList(resultantArr);
+      localStorage.setItem('productsArr', JSON.stringify(resultantArr));
+      alertCart();
+    }
+
+    else{
+      resultantArr.push({ productId: product.productId, quantity: 1, img: product.img, title: product.title, price: product.price, businessTitle: businessTitle })
+      setProductList(resultantArr);
+      localStorage.setItem('productsArr', JSON.stringify(resultantArr));
+      alertCart();
+
+    }
+    
+
+  };
+
+  const removeProduct = (id) => {
+    let productFoundIndex = productList.findIndex((o) => o.productId === id);
+    let productFound = productList.find((o) => o.productId === id);
+    let resultantArr = [...productList];
+    if (productFound) {
+      resultantArr.splice(productFoundIndex, 1);
+    }
+    setProductList(resultantArr);
+    setProductCount(resultantArr.length);
+    localStorage.setItem('productsArr', JSON.stringify(resultantArr));
+    alertCart();
+  };
+
+  const addProduct = (product) => {
+    setQuantityCount(product, 'increment')
+  }
+
+
 
   const changeTheme = (themeConfig = themeConfigDefault) => {
     setTheme({
@@ -75,8 +149,12 @@ const GlobalProvider = ({ children }) => {
     <GlobalContext.Provider
       value={{
         theme,
-        cartUpdated,
-        alertCart,
+        windowWidth,
+        productCount,
+        productList,
+        setQuantityCount,
+        removeProduct,
+        addProduct,
         changeTheme,
         videoModalVisible,
         toggleVideoModal,

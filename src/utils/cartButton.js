@@ -7,6 +7,7 @@ import GlobalContext from "../context/GlobalContext";
 
 
 import {FaMinus, FaPlus, FaTimes} from "react-icons/fa";
+import purchase from './purchase';
 
 // .cart-box {
 //   animation: fadeIn 2s linear;
@@ -234,59 +235,20 @@ const StyledCartButton = styled.div`
 `;
 
 const CartButton = () => {
-  const {alertCart, cartUpdated} = useContext(GlobalContext);
-  
-  const [windowWidth, setWindowWidth] = useState();
-  const [productCount, setProductCount] = useState();
-  const [productList, setProductList] = useState([]);
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    let storageProd = JSON.parse(localStorage.getItem('productsArr'));
-    setProductCount(storageProd.length);
-    setProductList(storageProd);
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', window);
-    };
-  }, [cartUpdated]);
 
-  const setQuantityCount = (product, type) => {
-    alertCart();
-    let productFoundIndex = productList.findIndex((o) => o.productId === product.productId);
-    let productFound = productList.find((o) => o.productId === product.productId);
-    let resultantArr = [...productList];
-    let businessTitle = product.businessTitle.split("from");
-    businessTitle = businessTitle[businessTitle.length - 1].trim().slice(0, -1);
-    if (productFound) {
-      if (type === 'increment') {
-        if (productFound.quantity >= 1) {
-          resultantArr[productFoundIndex] = { productId: product.productId, quantity: productFound.quantity + 1, img: product.img, title: product.title, price: product.price, businessTitle: businessTitle };
-        }
-      } else if (type === 'decrement') {
-        if (productFound.quantity > 1) {
-          resultantArr[productFoundIndex] = { productId: product.productId, quantity: productFound.quantity - 1, img: product.img, title: product.title, price: product.price, businessTitle: businessTitle };
-        }
+  const { setQuantityCount, removeProduct, windowWidth, productCount, productList} = useContext(GlobalContext);
+
+  const checkout = () =>{
+    const productMapArray = productList.map((productObject) => {
+      return {
+        productId: productObject.productId,
+        quantity: productObject.quantity
       }
-      setProductList(resultantArr);
-      localStorage.setItem('productsArr', JSON.stringify(resultantArr));
-    }
-  };
+    })
 
-  const removeProduct = (id) => {
-    alertCart();
-    let productFoundIndex = productList.findIndex((o) => o.productId === id);
-    let productFound = productList.find((o) => o.productId === id);
-    let resultantArr = [...productList];
-    if (productFound) {
-      resultantArr.splice(productFoundIndex, 1);
-    }
-    setProductList(resultantArr);
-    setProductCount(resultantArr.length);
-    localStorage.setItem('productsArr', JSON.stringify(resultantArr));
-  };
+    purchase(productMapArray);
+    
+  }
 
   return (
     <>
@@ -345,7 +307,7 @@ const CartButton = () => {
               <p className='mb-0'>$0.00</p>
             </div>
             <div className='p-5 action-btn'>
-              <button type='button' className='border-0 text-white w-100' disabled={productCount > 0 ? '' : 'disabled'}>Checkout</button>
+              <button onClick={() => checkout()} type='button' className='border-0 text-white w-100' disabled={productCount > 0 ? '' : 'disabled'}>Checkout</button>
             </div>
           </div>
         </div>
