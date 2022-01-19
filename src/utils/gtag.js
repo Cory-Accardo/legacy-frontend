@@ -17,7 +17,7 @@ export const event = ({ action, category, label, value }) => {
 }
 
 export const EventCategories = {
-  click: 'Click',
+  click: 'CLick',
   header: 'Header',
-  footer: 'Footer',
+  footer: 'Footer'
 }

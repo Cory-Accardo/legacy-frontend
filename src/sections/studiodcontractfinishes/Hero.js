@@ -3,12 +3,8 @@ import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/studiodcontractfinishes/png/hero-image.png";
 import BuyButton from '../../sections/common/BuyButton'
-import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <div className={className} {...rest}>
       <div className="container">
@@ -43,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
 
                   <div className="col-lg-5">
 
-                    <BuyButton productId='prod_Kdy1tQ82a0V2fR'  onClick={handleClick} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}  onClick={handleClick}>
+                    <BuyButton img={imgM} title='Studio D Color Consultation' businessTitle='Studio D!' price='112' productId='prod_Kdy1tQ82a0V2fR' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
                       Book Your Consultation
                     </BuyButton>
 
