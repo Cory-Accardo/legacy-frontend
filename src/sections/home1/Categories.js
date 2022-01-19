@@ -247,8 +247,9 @@ const Categories = ({ className, ...rest }) => {
       },
     ],
   };
-
+ 
   return (
+    
     <>
       <div className={className} {...rest}>
         <Container>
