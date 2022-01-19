@@ -39,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
               <div className="mt-10">
                 <div className="row align-items-center">
                   <div className="col-lg-5">
-                    <BuyButton productId ='prod_KeCBzXX5Inb3Qs' className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
+                    <BuyButton img={imgM} title='Toss It Up Salad spend deal' businessTitle='Toss it Up!' price='40' productId ='prod_KeCBzXX5Inb3Qs' className="btn btn-dark-green btn-1 rounded-5" target="_blank" style={{ background: '#39B54A', borderColor: '#39B54A' }}>
                       Place Your Order
                     </BuyButton>
                   </div>

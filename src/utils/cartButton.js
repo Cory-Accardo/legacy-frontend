@@ -4,8 +4,6 @@ import checkoutIcon from '../assets/image/checkout.png';
 import cartIcon from '../assets/image/cart-icon.png';
 import cartImage from '../assets/image/cart-item-img.png';
 import GlobalContext from "../context/GlobalContext";
-
-
 import {FaMinus, FaPlus, FaTimes} from "react-icons/fa";
 import purchase from './purchase';
 
@@ -26,11 +24,11 @@ const StyledCartButton = styled.div`
   width: 40px;
   height: 40px;
   background: #F0F0F0;
-  margin-right: ${props => props.windowWidth < 767 ? '0px' : '20px'};
+  margin-right: ${props => props.windowWidth < 767 ? '10px' : '20px'};
   text-align: center;
   position: relative;
   line-height: 35px;
-  &.added {
+  &.active {
     .top-count {
       position: absolute;
       content: '';
@@ -48,27 +46,16 @@ const StyledCartButton = styled.div`
         line-height: initial;
       }
     }
-    .cart-body {
-      display: block !important;
-    }
-    .cart-list {
-      display: block;
-    }
-    .cart-empty {
-      display: none;
-    }
   }
   img {
     width: 100%;
   }
   .checkout-icon {
     max-width: 15px;
+    cursor: pointer;
   }
   .cart-icon {
     max-width: 25px;
-  }
-  .cart-list {
-    display: none;
   }
   .product-count {
     margin-left: 15px;
@@ -96,12 +83,10 @@ const StyledCartButton = styled.div`
     display: none;
     transition: 0.5s ease-in-out;
   }
-  &:hover {
-    &.added {
-      .product-count {
-        &.top-count {
-          display: none;
-        }
+  &.active {
+    .product-count {
+      &.top-count {
+        display: none;
       }
     }
     .cart-box {
@@ -110,7 +95,7 @@ const StyledCartButton = styled.div`
       content: '';
       width:  ${props => props.windowWidth < 767 ? '290px' : '350px'};
       box-shadow: 0px 0px 15px -5px #000;
-      right: 0;
+      right: ${props => props.windowWidth < 480 ? '-65px' : '0'};
       top: 0;
       background: #fff;
       padding: 0 !important;
@@ -134,6 +119,9 @@ const StyledCartButton = styled.div`
       .cart-body {
         height: 350px;
         overflow-y: auto;
+        &.productsAdded {
+          display: block !important;
+        }
         .icon {
           padding: 20px;
           background: #f0f0f0;
@@ -236,7 +224,8 @@ const StyledCartButton = styled.div`
 
 const CartButton = () => {
 
-  const { setQuantityCount, removeProduct, windowWidth, productCount, productList} = useContext(GlobalContext);
+  const [displayCart, setDisplayCart] = useState(false);
+  const { setQuantityCount, removeProduct, windowWidth, productCount, productList, totalCartAmount} = useContext(GlobalContext);
 
   const checkout = () =>{
     const productMapArray = productList.map((productObject) => {
@@ -250,21 +239,29 @@ const CartButton = () => {
     
   }
 
+  const showCart = () => {
+    if (displayCart) {
+      setDisplayCart(false);
+    } else {
+      setDisplayCart(true);
+    }
+  }
+  
   return (
     <>
-      <StyledCartButton windowWidth={windowWidth} className={productCount > 0 ? 'added' : ''}>
+      <StyledCartButton windowWidth={windowWidth} className={displayCart ? 'active' : ''}>
         {productCount > 0 ? <span className='top-count product-count'>{productCount}</span> : ''}
-        <img className='checkout-icon' src={checkoutIcon} alt="checkout icon" />
+        <img className='checkout-icon' src={checkoutIcon} alt="checkout icon" onClick={() => showCart()}/>
         <div className='cart-box p-2'>
           <div className='p-5 cart-header d-flex justify-content-between align-items-center border-bottom'>
             <div className='d-flex justify-content-center align-items-center'>
               <h5 className='mb-0'>Your Cart</h5>
               <span className='product-count'>{productCount > 0 ? productCount : 0}</span>
             </div>
-            <span className='close'><FaTimes /></span>
+            <span className='close' onClick={() => showCart()}><FaTimes /></span>
           </div>
-          <div className='py-5 cart-body d-flex justify-content-center flex-column'>
-            <ul className='cart-list list-unstyled w-100'>
+          <div className={productCount > 0 ? 'py-5 cart-body d-flex justify-content-center flex-column productsAdded' : 'py-5 cart-body d-flex justify-content-center flex-column'}>
+            {productCount > 0 ? <ul className='cart-list list-unstyled w-100'>
               {
                 productList.length > 0 && productList.map((product, index) => {
                   return (
@@ -295,16 +292,15 @@ const CartButton = () => {
                   )
                 })
               }
-            </ul>
-            <div className='cart-empty'>
+            </ul> : <div className='cart-empty'>
               <div className='icon'><img className='cart-icon' src={cartIcon} alt='cart icon' /></div>
               <h4 className='text mb-0'>Your Cart is Empty.</h4>
-            </div>
+            </div>}
           </div>
           <div className='cart-footer border-top'>
             <div className='p-5 total-count border-bottom d-flex justify-content-between align-items-center'>
               <strong className='mb-0'>Subtotal:</strong>
-              <p className='mb-0'>$0.00</p>
+              <p className='mb-0'>${totalCartAmount}.00</p>
             </div>
             <div className='p-5 action-btn'>
               <button onClick={() => checkout()} type='button' className='border-0 text-white w-100' disabled={productCount > 0 ? '' : 'disabled'}>Checkout</button>

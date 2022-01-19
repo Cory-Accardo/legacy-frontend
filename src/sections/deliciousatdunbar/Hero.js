@@ -38,10 +38,10 @@ const Hero = ({ className, ...rest }) => {
                 <div className="row align-items-center">
                 <div className="col-lg-12 mb-10">
            
-                  <BuyButton productId='prod_KdpIVWIwjXqjO7' className="btn btn-dark-green btn-2 rounded-5 text-white mr-4" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
+                  <BuyButton img={imgM} title="Delicious at the Dunbar: Special 1" businessTitle="Delicious at Dunbar!" price='325' productId='prod_KdpIVWIwjXqjO7' className="btn btn-dark-green btn-2 rounded-5 text-white mr-4" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
                   Buy Special #1
                   </BuyButton>
-                  <BuyButton productId='prod_Kdq1lvQY84Auxb' className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
+                  <BuyButton img={imgM} title="Delicious at the Dunbar: Special 2" businessTitle="Delicious at Dunbar!" price='680' productId='prod_Kdq1lvQY84Auxb' className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#E3A11F', borderColor: '#F6A682' }}>
                   Buy Special #2
                   </BuyButton>
                

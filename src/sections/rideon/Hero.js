@@ -27,7 +27,7 @@ const Hero = ({ className, ...rest }) => {
                 Come into RideOn! Bike Shop and recieve 20% our Basic Tune Up Package. Whether your bike is in need of a minor adjustment or a major overhaul, we promise that your ride is in good hands.
               </p>
               <div className="mt-5">
-                <BuyButton productId='prod_KdrvyFlU7xI7Yn' target="_blank" className="btn btn-dark-green btn-1 mb-8 rounded-5" style={{ background: '#F3592D', borderColor: '#F3592D' }}>
+                <BuyButton img={imageUrl} title='Ride On! Bike Shop Tune Up' businessTitle='Ride On!' price='72' productId='prod_KdrvyFlU7xI7Yn' target="_blank" className="btn btn-dark-green btn-1 mb-8 rounded-5" style={{ background: '#F3592D', borderColor: '#F3592D' }}>
                    Purchase Tune-Up
                 </BuyButton>
               </div>

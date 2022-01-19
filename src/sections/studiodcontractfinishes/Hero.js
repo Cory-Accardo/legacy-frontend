@@ -39,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
 
                   <div className="col-lg-5">
 
-                    <BuyButton productId='prod_Kdy1tQ82a0V2fR' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
+                    <BuyButton img={imgM} title='Studio D Color Consultation' businessTitle='Studio D!' price='112' productId='prod_Kdy1tQ82a0V2fR' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#a52062', borderColor: '#a52062' }}>
                       Book Your Consultation
                     </BuyButton>
 

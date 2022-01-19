@@ -39,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
               <div className="mt-10">
                 <div className="row align-items-center">
                   <div className="col-lg-5">
-                      <BuyButton productId='prod_Kds6PuIfkmGDsg' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
+                      <BuyButton img={imgM} title='Free Side with My Fish Stop Dinner' businessTitle='My Fish Stop!' price='18.99' productId='prod_Kds6PuIfkmGDsg' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
                         Place Your Order Today
                       </BuyButton>
                   </div>

@@ -28,7 +28,7 @@ const Hero = ({ className, ...rest }) => {
                 to prepare the driver for a permit or licsence.
               </p>
               <div className="d-flex align-items-center py-6 mr-xl-15">
-                <BuyButton productId='prod_Ke14nMwBW69Cv3' className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
+                <BuyButton img={imageUrl} title="Freeway Easy Behind the Wheel Discount" businessTitle="Freeway easy!" price='230' productId='prod_Ke14nMwBW69Cv3' className="btn btn-dark-green btn-2 rounded-5 text-white" target="_blank" style={{ background: '#00AFEB', borderColor: '#00AFEB' }}>
                   Sign-Up Now
                 </BuyButton>
               </div>
