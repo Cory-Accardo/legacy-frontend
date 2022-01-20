@@ -9,12 +9,8 @@ import QRLogo1 from "../../assets/image/footer-5/png/QR-image-1.png";
 import QRLogo2 from "../../assets/image/footer-5/png/QR-image-2.png";
 import QRLogo3 from "../../assets/image/footer-5/png/QR-image-3.png";
 import MartyLogo from "../../assets/image/footer-5/png/marty-logo.png";
-import * as gtag from '../../utils/gtag';
 
 const Footer = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'donation_qr', category: gtag.EventCategories.footer, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <>
       <div
@@ -63,9 +59,9 @@ const Footer = ({ className, ...rest }) => {
                       Every dollar donated goes toward Training Bootcamps free to the community.
                       </p>
                       <div className="d-flex justify-content-between align-items-center">
-                        <a href="https://venmo.com/u/Misla" target="_blank" onClick={handleClick}><img src={QRLogo1} alt="QR Code 1" width="100" /></a>
-                        <a href="https://cash.app/$M1SLA" target="_blank" onClick={handleClick}><img src={QRLogo2} alt="QR Code 2" width="100"  /></a>
-                        <a href="https://www.paypal.com/donate/?business=ZMSR4TPCGSFMC&item_name=Training+South+LA+Youth+in+Coding%2C+Branding%2C+Digital+Marketing.&currency_code=USD" onClick={handleClick} target="_blank"><img src={QRLogo3} alt="QR Code 3" width="100"  /></a>
+                        <a href="https://venmo.com/u/Misla" target="_blank"><img src={QRLogo1} alt="QR Code 1" width="100" /></a>
+                        <a href="https://cash.app/$M1SLA" target="_blank"><img src={QRLogo2} alt="QR Code 2" width="100"  /></a>
+                        <a href="https://www.paypal.com/donate/?business=ZMSR4TPCGSFMC&item_name=Training+South+LA+Youth+in+Coding%2C+Branding%2C+Digital+Marketing.&currency_code=USD" target="_blank"><img src={QRLogo3} alt="QR Code 3" width="100"  /></a>
                       </div>
                     </div>
                   </div>

@@ -3,12 +3,8 @@ import Link from "next/link";
 import arrow from "../../assets/image/arrow.png";
 import imgM from "../../assets/image/myfishstop/png/hero-image.png";
 import BuyButton from "../common/BuyButton";
-import * as gtag from '../../utils/gtag';
 
 const Hero = ({ className, ...rest }) => {
-  const handleClick = () => {
-    gtag.event({ action: 'buy_without_saving', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
-  };
   return (
     <div className={className} {...rest}>
       <div className="container position-static">
@@ -43,7 +39,7 @@ const Hero = ({ className, ...rest }) => {
               <div className="mt-10">
                 <div className="row align-items-center">
                   <div className="col-lg-5">
-                      <BuyButton productId='prod_Kds6PuIfkmGDsg' onClick={handleClick} className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
+                      <BuyButton img={imgM} title='Free Side with My Fish Stop Dinner' businessTitle='My Fish Stop!' price='18.99' productId='prod_Kds6PuIfkmGDsg' className="btn btn-dark-green btn-3 rounded-5 text-white" target="_blank" style={{ background: '#000', borderColor: '#000' }}>
                         Place Your Order Today
                       </BuyButton>
                   </div>
