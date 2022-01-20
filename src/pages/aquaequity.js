@@ -26,7 +26,7 @@ const MartgolsMagic = () => {
                 }}
             >
                 <Hero className="pt-33 pb-12" />
-                <CardSection businessName='Want to support from Aqua Equity’s Good Works?' productId='prod_KfINiA7YQR8PDS' productId2='prod_KfIR0i6ecCv3Zs' className="bg-transparent pt-12 pb-12" />
+                <CardSection businessName='Want to support Aqua Equity’s Good Works?' productId='prod_KfINiA7YQR8PDS' productId2='prod_KfIR0i6ecCv3Zs' className="bg-transparent pt-12 pb-12" />
                 <SectionDetail className="bg-default-5 pt-12 pb-12" />
                 <ClientSection className="bg-transparent pt-22 pb-18" />
             </PageWrapper>

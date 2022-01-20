@@ -1,13 +1,14 @@
-import React, {useEffect, useContext, useState} from 'react';
+import React from 'react';
 import purchase from '../../utils/purchase';
 import imgMsc1 from "../../assets/image/slashcard1.png";
 import imgMsc2 from "../../assets/image/slashcard2.png";
 import BuyButton from './BuyButton';
-import styled from 'styled-components';
-import GlobalContext from '../../context/GlobalContext';
+import * as gtag from '../../utils/gtag';
 
 const CardSection = ({ className,productId,productId2, businessName, ...rest }) => {
-
+    const handleClick = () => {
+        gtag.event({ action: 'buy_now_card', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+      };
     return (
         <div className={className} {...rest}>
             <div className="container border-top pt-20 pb-5">
@@ -40,9 +41,9 @@ const CardSection = ({ className,productId,productId2, businessName, ...rest }) 
                     <div className="col-lg-6 font-weight-500">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="text-center mb-xs-7 mb-3" data-aos="flip-right" data-aos-delay={900}>
-                                    <img className="mb-4" src={imgMsc1} alt="image" style={{ maxWidth: '100%' }} />
-                                    <BuyButton img={imgMsc1} price='125' title='$250 card for $125' businessTitle={businessName} productId={productId} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
+                                <div className="text-center mb-xs-7 mb-0" data-aos="flip-right" data-aos-delay={900}>
+                                    <img className="mb-4" width="320" src={imgMsc1} alt="image" />
+                                    <BuyButton productId={productId} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }} >
                                         $250 card for $125 <br />
                                         BUY NOW
                                     </BuyButton>
@@ -50,8 +51,8 @@ const CardSection = ({ className,productId,productId2, businessName, ...rest }) 
                             </div>
                             <div className="col-lg-6">
                                 <div className="text-center mb-xs-7  mb-0" data-aos="flip-right" data-aos-delay={900}>
-                                    <img className="mb-4 max-w-100" src={imgMsc2} alt="image" style={{ maxWidth: '100%' }} />
-                                    <BuyButton img={imgMsc2} price='50' title='$100 card for $50' businessTitle={businessName} productId={productId2} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
+                                    <img className="mb-4" width="320" src={imgMsc2} alt="image" />
+                                    <BuyButton productId={productId2} className="btn mt-4 btn-dark-green btn-4 pt-3 p-2 rounded-5" style={{ background: 'linear-gradient(180deg, #000000 32.81%, #39B54A 100%)', borderColor: '#39B54A' }}>
                                         $100 card for $50 <br/>
                                         BUY NOW
                                     </BuyButton>
