@@ -17,6 +17,7 @@ import freewayEasy from "../../assets/image/homepage/png/categories/freeway-easy
 import deliciousAtDunbar from "../../assets/image/homepage/png/categories/delicious-at-dunbar.png";
 import AF from "../../assets/image/homepage/png/categories/AF.png";
 import misla from "../../assets/image/homepage/png/categories/misla.png";
+import * as gtag from '../../utils/gtag';
 
 const SliderStyled = styled(Slider)`
   .slick-slide div {
@@ -108,11 +109,11 @@ const Categories = ({ className, ...rest }) => {
     dots: false,
     autoplay: true,
     infinite: true,
-    speed: 300,
+    speed: 500,
+    autoplaySpeed: 800,
     centerPadding: "28%",
     centerMode: true,
     slidesToShow: 3,
-    // slidesToScroll: 3,
     arrows: false,
     className: "single-slide",
 
@@ -256,7 +257,9 @@ const Categories = ({ className, ...rest }) => {
       },
     ],
   };
-
+  const handleClick = () => {
+    gtag.event({ action: 'business_tiles', category: gtag.EventCategories.click, label: window.location.pathname, value: window.location.pathname });
+  };
   return (
     <>
       <section id="slashcard" className={className} {...rest}>
@@ -312,6 +315,7 @@ const Categories = ({ className, ...rest }) => {
                   target="_blank"
                   className="single-category mx-xs-9 mx-lg-7 focus-reset slick-slide"
                   tabIndex="-1"
+                  onClick={handleClick}
                 >
                   <div className="bg-cat shadow-2 min-w-255 min-h-222 gr-hover-1 text-center">
                     

@@ -33,7 +33,7 @@ const SectionDetail = ({ className, ...rest }) => {
                                 </div>
                                 <div className="mt-0">
                                     <p className="font-size-6 mb-0 font-weight-bold">
-                                        <a style={{ color: '#000' }} href="#" target="_blank">Aqua Equity Water</a>
+                                        <a style={{ color: '#000' }} href="https://aquaequitywater.com/" target="_blank">Aqua Equity Water</a>
                                     </p>
                                 </div>
                             </div>
