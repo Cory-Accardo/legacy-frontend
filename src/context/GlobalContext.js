@@ -65,7 +65,7 @@ const GlobalProvider = ({ children }) => {
     setWindowWidth(window.innerWidth);
     let storageProd = JSON.parse(localStorage.getItem('productsArr'));
     if(!storageProd) storageProd = [];
-    setProductCount(storageProd);
+    setProductCount(storageProd.length);
     setProductList(storageProd);
     let count = 0;
     storageProd.map((element) => {
